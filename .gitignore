@@ -1,0 +1,7 @@
+passwordgen/
+.env
+app/
+passgen.crt
+passgen.key
+passgen.pem
+passgen.pfx

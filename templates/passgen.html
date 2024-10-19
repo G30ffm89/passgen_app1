@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block body %}
+
+<div class="parent">
+    <div class="div1">
+        <h1>Password:</h1>
+        <h2>{{ passw }}</h2>
+        <a href="{{ url_for('generate_password') }}" class="button">Regenerate</a>
+    </div>
+
+</div>
+
+{% endblock %}

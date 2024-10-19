@@ -1,0 +1,63 @@
+2024-10-19 19:49:37,616 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.2:5000
+2024-10-19 19:49:37,616 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-19 19:50:31,044 INFO app Thread-1 (process_request_thread) : Received request
+2024-10-19 19:50:31,046 WARNING app Thread-1 (process_request_thread) : INSECURE CONNECTION: Request made over HTTP
+2024-10-19 19:50:31,060 INFO werkzeug Thread-1 (process_request_thread) : 172.18.0.1 - - [19/Oct/2024 19:50:31] "GET / HTTP/1.1" 200 -
+2024-10-19 19:50:31,530 INFO werkzeug Thread-2 (process_request_thread) : 172.18.0.1 - - [19/Oct/2024 19:50:31] "GET /static/css/pass_gen.css HTTP/1.1" 200 -
+2024-10-19 19:50:31,600 INFO werkzeug Thread-3 (process_request_thread) : 172.18.0.1 - - [19/Oct/2024 19:50:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-19 19:50:43,139 ERROR werkzeug Thread-4 (process_request_thread) : 172.18.0.1 - - [19/Oct/2024 19:50:43] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03fDØÐ2K\x7f')
+2024-10-19 19:50:43,140 INFO werkzeug Thread-4 (process_request_thread) : 172.18.0.1 - - [19/Oct/2024 19:50:43] "[31m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03fDØÐ2K\x7f[0m" 400 -
+2024-10-19 19:52:26,718 ERROR werkzeug Thread-5 (process_request_thread) : 172.18.0.1 - - [19/Oct/2024 19:52:26] code 400, message Bad request version ('-l\x00$\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+2024-10-19 19:52:26,719 INFO werkzeug Thread-5 (process_request_thread) : 172.18.0.1 - - [19/Oct/2024 19:52:26] "[31m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03 qL\x0fGJ6¾×í\x17¤<#\x18=i\x95¸c\x88öYz9êöîÞÓ\x0d? zë7F\x8d×\x0dË¢\x8f¦J\x86©Áþgü´\x17\x9f\x95îh¡\x8b\x81oM -l\x00$\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À[0m" 400 -
+2024-10-19 19:52:27,750 ERROR werkzeug Thread-6 (process_request_thread) : 172.18.0.1 - - [19/Oct/2024 19:52:27] code 400, message Bad request version ('¨q4,ÍlkaN\x13öí\x00$\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+2024-10-19 19:52:27,750 INFO werkzeug Thread-6 (process_request_thread) : 172.18.0.1 - - [19/Oct/2024 19:52:27] "[31m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x13¾2mqg\x9dqÎ¯È9­Î¨ÊUj\x9b¨\x8bÉÃø¡\x9fÿöíÅã÷ m+]Ê;¢?°~-õ.Û©Q\x1bpÚu\x1d¨q4,ÍlkaN\x13öí\x00$\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À[0m" 400 -
+2024-10-19 19:52:33,370 INFO app Thread-7 (process_request_thread) : Received request
+2024-10-19 19:52:33,372 WARNING app Thread-7 (process_request_thread) : INSECURE CONNECTION: Request made over HTTP
+2024-10-19 19:52:33,372 INFO werkzeug Thread-7 (process_request_thread) : 172.18.0.1 - - [19/Oct/2024 19:52:33] "GET / HTTP/1.1" 200 -
+2024-10-19 19:52:33,498 INFO werkzeug Thread-8 (process_request_thread) : 172.18.0.1 - - [19/Oct/2024 19:52:33] "GET /static/css/pass_gen.css HTTP/1.1" 200 -
+2024-10-19 19:52:33,624 INFO werkzeug Thread-9 (process_request_thread) : 172.18.0.1 - - [19/Oct/2024 19:52:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-19 19:52:35,096 ERROR werkzeug Thread-10 (process_request_thread) : 172.18.0.1 - - [19/Oct/2024 19:52:35] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03;FTú\x08óEûðlS`ç¶\x03Ã]\x15\x954\xadnî[\x90Ã\x823\x12Ýj¨')
+2024-10-19 19:52:35,096 INFO werkzeug Thread-10 (process_request_thread) : 172.18.0.1 - - [19/Oct/2024 19:52:35] "[31m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03;FTú\x08óEûðlS`ç¶\x03Ã]\x15\x954­nî[\x90Ã\x823\x12Ýj¨ \x95Û/)1$idTÀ\x13sZ\x10\x13Ö3HÝ\x11¾,\x1au\x05ÈJ}\x8flÖ~\x00$\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À[0m" 400 -
+2024-10-19 19:56:06,903 INFO app Thread-11 (process_request_thread) : Received request
+2024-10-19 19:56:06,903 WARNING app Thread-11 (process_request_thread) : INSECURE CONNECTION: Request made over HTTP
+2024-10-19 19:56:06,904 INFO werkzeug Thread-11 (process_request_thread) : 172.18.0.1 - - [19/Oct/2024 19:56:06] "GET / HTTP/1.1" 200 -
+2024-10-19 19:56:06,972 INFO werkzeug Thread-12 (process_request_thread) : 172.18.0.1 - - [19/Oct/2024 19:56:06] "[36mGET /static/css/pass_gen.css HTTP/1.1[0m" 304 -
+2024-10-19 20:00:22,388 INFO app Thread-13 (process_request_thread) : Received request
+2024-10-19 20:00:22,389 WARNING app Thread-13 (process_request_thread) : INSECURE CONNECTION: Request made over HTTP
+2024-10-19 20:00:22,389 INFO werkzeug Thread-13 (process_request_thread) : 172.18.0.1 - - [19/Oct/2024 20:00:22] "GET / HTTP/1.1" 200 -
+2024-10-19 20:00:22,412 INFO werkzeug Thread-14 (process_request_thread) : 172.18.0.1 - - [19/Oct/2024 20:00:22] "GET /static/css/pass_gen.css HTTP/1.1" 200 -
+2024-10-19 20:06:29,243 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.19.0.2:5000
+2024-10-19 20:06:29,245 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-19 20:15:16,700 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.0.2:5000
+2024-10-19 20:15:16,702 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-19 20:25:47,700 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.21.0.2:5000
+2024-10-19 20:25:47,702 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-19 20:26:20,418 INFO app Thread-1 (process_request_thread) : Received request
+2024-10-19 20:26:20,421 WARNING app Thread-1 (process_request_thread) : INSECURE CONNECTION: Request made over HTTP
+2024-10-19 20:26:20,429 INFO werkzeug Thread-1 (process_request_thread) : 172.21.0.3 - - [19/Oct/2024 20:26:20] "GET / HTTP/1.0" 200 -
+2024-10-19 20:26:20,547 INFO werkzeug Thread-2 (process_request_thread) : 172.21.0.3 - - [19/Oct/2024 20:26:20] "GET /static/css/pass_gen.css HTTP/1.0" 200 -
+2024-10-19 20:26:20,557 INFO werkzeug Thread-3 (process_request_thread) : 172.21.0.3 - - [19/Oct/2024 20:26:20] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+2024-10-19 20:26:54,245 INFO app Thread-4 (process_request_thread) : Password generated: S¬tupidCro.ss5D&u6al1
+2024-10-19 20:26:54,248 INFO werkzeug Thread-4 (process_request_thread) : 172.21.0.3 - - [19/Oct/2024 20:26:54] "GET /generate_password HTTP/1.0" 200 -
+2024-10-19 20:26:54,315 INFO werkzeug Thread-5 (process_request_thread) : 172.21.0.3 - - [19/Oct/2024 20:26:54] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-19 20:26:56,866 INFO app Thread-6 (process_request_thread) : Password generated: !3He6ftyK[n!95i4t<We#alth
+2024-10-19 20:26:56,867 INFO werkzeug Thread-6 (process_request_thread) : 172.21.0.3 - - [19/Oct/2024 20:26:56] "GET /generate_password HTTP/1.0" 200 -
+2024-10-19 20:26:56,932 INFO werkzeug Thread-7 (process_request_thread) : 172.21.0.3 - - [19/Oct/2024 20:26:56] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-19 20:26:58,000 INFO app Thread-8 (process_request_thread) : Password generated: Antic`]ip}8a5teC1h4e£5micalFirs,t
+2024-10-19 20:26:58,001 INFO werkzeug Thread-8 (process_request_thread) : 172.21.0.3 - - [19/Oct/2024 20:26:58] "GET /generate_password HTTP/1.0" 200 -
+2024-10-19 20:26:58,035 INFO werkzeug Thread-9 (process_request_thread) : 172.21.0.3 - - [19/Oct/2024 20:26:58] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-19 20:26:59,072 INFO app Thread-10 (process_request_thread) : Password generated: NastyWe9|l`co]1me$U2n6eve6^n
+2024-10-19 20:26:59,072 INFO werkzeug Thread-10 (process_request_thread) : 172.21.0.3 - - [19/Oct/2024 20:26:59] "GET /generate_password HTTP/1.0" 200 -
+2024-10-19 20:26:59,102 INFO werkzeug Thread-11 (process_request_thread) : 172.21.0.3 - - [19/Oct/2024 20:26:59] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
