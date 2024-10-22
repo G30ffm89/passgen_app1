@@ -15,7 +15,6 @@ RUN mkdir -p /app/logs
 RUN chown 1000:1000 /app/logs
 
 COPY templates/base.html /app/templates/base.html
-COPY templates/home.html /app/templates/home.html
 COPY templates/passgen.html /app/templates/passgen.html
 COPY static/css/pass_gen.css /app/static/css/pass_gen.css
 COPY requirements.txt /app/requirements.txt

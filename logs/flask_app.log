@@ -61,3 +61,467 @@
 2024-10-19 20:26:59,072 INFO app Thread-10 (process_request_thread) : Password generated: NastyWe9|l`co]1me$U2n6eve6^n
 2024-10-19 20:26:59,072 INFO werkzeug Thread-10 (process_request_thread) : 172.21.0.3 - - [19/Oct/2024 20:26:59] "GET /generate_password HTTP/1.0" 200 -
 2024-10-19 20:26:59,102 INFO werkzeug Thread-11 (process_request_thread) : 172.21.0.3 - - [19/Oct/2024 20:26:59] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 10:29:36,775 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.19.0.2:5000
+2024-10-22 10:29:36,777 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-22 10:35:57,483 INFO app Thread-1 (process_request_thread) : Received request
+2024-10-22 10:35:57,485 WARNING app Thread-1 (process_request_thread) : INSECURE CONNECTION: Request made over HTTP
+2024-10-22 10:35:57,612 INFO werkzeug Thread-1 (process_request_thread) : 172.19.0.3 - - [22/Oct/2024 10:35:57] "GET / HTTP/1.0" 200 -
+2024-10-22 10:35:57,921 INFO werkzeug Thread-2 (process_request_thread) : 172.19.0.3 - - [22/Oct/2024 10:35:57] "GET /static/css/pass_gen.css HTTP/1.0" 200 -
+2024-10-22 10:37:01,444 INFO app Thread-3 (process_request_thread) : Received request
+2024-10-22 10:37:01,444 WARNING app Thread-3 (process_request_thread) : INSECURE CONNECTION: Request made over HTTP
+2024-10-22 10:37:01,445 INFO werkzeug Thread-3 (process_request_thread) : 172.19.0.3 - - [22/Oct/2024 10:37:01] "GET / HTTP/1.0" 200 -
+2024-10-22 10:37:01,515 INFO werkzeug Thread-4 (process_request_thread) : 172.19.0.3 - - [22/Oct/2024 10:37:01] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 10:43:13,866 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.0.2:5000
+2024-10-22 10:43:13,869 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-22 10:44:17,463 INFO app Thread-1 (process_request_thread) : Received request
+2024-10-22 10:44:17,463 WARNING app Thread-1 (process_request_thread) : INSECURE CONNECTION: Request made over HTTP
+2024-10-22 10:44:17,495 INFO werkzeug Thread-1 (process_request_thread) : 172.20.0.3 - - [22/Oct/2024 10:44:17] "GET / HTTP/1.0" 200 -
+2024-10-22 10:44:17,664 INFO werkzeug Thread-2 (process_request_thread) : 172.20.0.3 - - [22/Oct/2024 10:44:17] "GET /static/css/pass_gen.css HTTP/1.0" 200 -
+2024-10-22 10:44:17,670 INFO werkzeug Thread-3 (process_request_thread) : 172.20.0.3 - - [22/Oct/2024 10:44:17] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+2024-10-22 10:47:44,808 INFO app Thread-4 (process_request_thread) : Received request
+2024-10-22 10:47:44,814 WARNING app Thread-4 (process_request_thread) : INSECURE CONNECTION: Request made over HTTP
+2024-10-22 10:47:44,815 INFO werkzeug Thread-4 (process_request_thread) : 172.20.0.1 - - [22/Oct/2024 10:47:44] "GET / HTTP/1.1" 200 -
+2024-10-22 10:47:45,307 INFO werkzeug Thread-5 (process_request_thread) : 172.20.0.1 - - [22/Oct/2024 10:47:45] "GET /static/css/pass_gen.css HTTP/1.1" 200 -
+2024-10-22 10:47:45,370 INFO werkzeug Thread-6 (process_request_thread) : 172.20.0.1 - - [22/Oct/2024 10:47:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-22 10:47:53,852 ERROR werkzeug Thread-7 (process_request_thread) : 172.20.0.1 - - [22/Oct/2024 10:47:53] code 400, message Bad request version ('kw\x12\x84IçG\x9dþ\x99öèë$²Jã·m')
+2024-10-22 10:47:53,852 INFO werkzeug Thread-7 (process_request_thread) : 172.20.0.1 - - [22/Oct/2024 10:47:53] "[31m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ØHê´Îø-`\x0c\x9brÅ\x9e`Va\x9b]ò\x039\x8e\x98\x99Ô¶\x9d<ÎÔd\x0c 2zd\x18æÞ\x0bkw\x12\x84IçG\x9dþ\x99öèë$²Jã·m[0m" 400 -
+2024-10-22 10:55:35,554 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.21.0.2:5000
+2024-10-22 10:55:35,555 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-22 10:56:35,084 INFO app Thread-1 (process_request_thread) : Received request
+2024-10-22 10:56:35,084 WARNING app Thread-1 (process_request_thread) : INSECURE CONNECTION: Request made over HTTP
+2024-10-22 10:56:35,095 INFO werkzeug Thread-1 (process_request_thread) : 172.21.0.3 - - [22/Oct/2024 10:56:35] "GET / HTTP/1.0" 200 -
+2024-10-22 10:56:35,459 INFO werkzeug Thread-2 (process_request_thread) : 172.21.0.3 - - [22/Oct/2024 10:56:35] "GET /static/css/pass_gen.css HTTP/1.0" 200 -
+2024-10-22 10:56:35,554 INFO werkzeug Thread-3 (process_request_thread) : 172.21.0.3 - - [22/Oct/2024 10:56:35] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+2024-10-22 10:58:29,291 INFO app Thread-4 (process_request_thread) : Received request
+2024-10-22 10:58:29,291 WARNING app Thread-4 (process_request_thread) : INSECURE CONNECTION: Request made over HTTP
+2024-10-22 10:58:29,291 INFO werkzeug Thread-4 (process_request_thread) : 172.21.0.3 - - [22/Oct/2024 10:58:29] "GET / HTTP/1.0" 200 -
+2024-10-22 10:58:29,495 INFO werkzeug Thread-5 (process_request_thread) : 172.21.0.3 - - [22/Oct/2024 10:58:29] "GET /static/css/pass_gen.css HTTP/1.0" 200 -
+2024-10-22 10:58:29,500 INFO werkzeug Thread-6 (process_request_thread) : 172.21.0.3 - - [22/Oct/2024 10:58:29] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+2024-10-22 11:00:14,080 INFO app Thread-7 (process_request_thread) : Received request
+2024-10-22 11:00:14,080 WARNING app Thread-7 (process_request_thread) : INSECURE CONNECTION: Request made over HTTP
+2024-10-22 11:00:14,080 INFO werkzeug Thread-7 (process_request_thread) : 172.21.0.3 - - [22/Oct/2024 11:00:14] "GET / HTTP/1.0" 200 -
+2024-10-22 11:00:14,239 INFO werkzeug Thread-8 (process_request_thread) : 172.21.0.3 - - [22/Oct/2024 11:00:14] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 11:00:16,014 INFO app Thread-9 (process_request_thread) : Received request
+2024-10-22 11:00:16,014 WARNING app Thread-9 (process_request_thread) : INSECURE CONNECTION: Request made over HTTP
+2024-10-22 11:00:16,014 INFO werkzeug Thread-9 (process_request_thread) : 172.21.0.3 - - [22/Oct/2024 11:00:16] "GET / HTTP/1.0" 200 -
+2024-10-22 11:00:16,130 INFO werkzeug Thread-10 (process_request_thread) : 172.21.0.3 - - [22/Oct/2024 11:00:16] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 11:00:24,797 INFO app Thread-11 (process_request_thread) : Received request
+2024-10-22 11:00:24,797 WARNING app Thread-11 (process_request_thread) : INSECURE CONNECTION: Request made over HTTP
+2024-10-22 11:00:24,797 INFO werkzeug Thread-11 (process_request_thread) : 172.21.0.3 - - [22/Oct/2024 11:00:24] "GET / HTTP/1.0" 200 -
+2024-10-22 11:00:24,973 INFO werkzeug Thread-12 (process_request_thread) : 172.21.0.3 - - [22/Oct/2024 11:00:24] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 11:02:50,446 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.0.2:5000
+2024-10-22 11:02:50,448 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-22 11:03:05,371 ERROR werkzeug Thread-1 (process_request_thread) : 172.22.0.3 - - [22/Oct/2024 11:03:05] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x01&\x01\x00\x01"\x03\x03)J\x9e·P½\x9f©#Ò')
+2024-10-22 11:03:05,371 INFO werkzeug Thread-1 (process_request_thread) : 172.22.0.3 - - [22/Oct/2024 11:03:05] "[31m[1m\x16\x03\x01\x01&\x01\x00\x01"\x03\x03)J\x9e·P½\x9f©#Ò\x0d7¯\x17Xøµùa[0m" 400 -
+2024-10-22 11:03:08,234 ERROR werkzeug Thread-2 (process_request_thread) : 172.22.0.3 - - [22/Oct/2024 11:03:08] code 400, message Bad request version ("ÑÐý\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+2024-10-22 11:03:08,234 INFO werkzeug Thread-2 (process_request_thread) : 172.22.0.3 - - [22/Oct/2024 11:03:08] "[31m[1m\x16\x03\x01\x01&\x01\x00\x01"\x03\x03\x02±Ü\x7f¬#÷ÍË2\x1d\x9f\x9a)\x1c\x7fñ-¬SG\x11æ\x8c+0±ÇxÚ\x15. Ñá\x87ÍP\x88Ñü¹t¨uÁD\x94mÓ\x1a~y\x9cßì{u\x01¡\x01\x09ÑÐý\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" 400 -
+2024-10-22 11:03:27,064 ERROR werkzeug Thread-3 (process_request_thread) : 172.22.0.3 - - [22/Oct/2024 11:03:27] code 400, message Bad request version ('Ï\x94ÔxÃ\x1a]ÖÝuj¹¿Õ*\x07\x8fd¯{1\x9ci=')
+2024-10-22 11:03:27,064 INFO werkzeug Thread-3 (process_request_thread) : 172.22.0.3 - - [22/Oct/2024 11:03:27] "[31m[1m\x16\x03\x01\x01&\x01\x00\x01"\x03\x03úf&\x95bV\x96\x0d\x9d\x8dxXQF\x87ê\x97¿b§\x99\x15Î£qÛH\x8aðF+5 £[æ Ï\x94ÔxÃ\x1a]ÖÝuj¹¿Õ*\x07\x8fd¯{1\x9ci=[0m" 400 -
+2024-10-22 11:03:27,189 ERROR werkzeug Thread-4 (process_request_thread) : 172.22.0.3 - - [22/Oct/2024 11:03:27] code 400, message Bad request version ("l¦\x8dÏVaÿ¡\x06©y\x83/0\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+2024-10-22 11:03:27,189 INFO werkzeug Thread-4 (process_request_thread) : 172.22.0.3 - - [22/Oct/2024 11:03:27] "[31m[1m\x16\x03\x01\x01&\x01\x00\x01"\x03\x03Âg93í-Õ\x8c\x814\x8a'OF\x1bÚ¯¹d\x04U(\x0dX¸túÁ¸·C^ Æsd\x05\x00aïÝ3Ý¨¾BCF@ª\x85l¦\x8dÏVaÿ¡\x06©y\x83/0\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" 400 -
+2024-10-22 11:05:28,410 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.23.0.2:5000
+2024-10-22 11:05:28,413 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-22 11:07:05,253 ERROR werkzeug Thread-1 (process_request_thread) : 172.23.0.3 - - [22/Oct/2024 11:07:05] code 400, message Bad request version ("é¹Ð\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+2024-10-22 11:07:05,253 INFO werkzeug Thread-1 (process_request_thread) : 172.23.0.3 - - [22/Oct/2024 11:07:05] "[31m[1m\x16\x03\x01\x01&\x01\x00\x01"\x03\x03|ä\x9fä¤ÂÙ\x06¥\x0f)õr=­{'Ü'>NÐÕÎHWmX¢éøX E\x05Ó\x96@®r\x03b\x07ú\x8cø±@hïR|xX¯a1\x84x>v\x1cé¹Ð\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" 400 -
+2024-10-22 11:07:06,200 ERROR werkzeug Thread-2 (process_request_thread) : 172.23.0.3 - - [22/Oct/2024 11:07:06] code 400, message Bad request version ("ÏüÏ±\x96\x93£\x17ÔÄ\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+2024-10-22 11:07:06,200 INFO werkzeug Thread-2 (process_request_thread) : 172.23.0.3 - - [22/Oct/2024 11:07:06] "[31m[1m\x16\x03\x01\x01&\x01\x00\x01"\x03\x03\x90Võ\x97â?\x80\x14M2ß»ï9g\x17#YÈ#Ð6\x0eTÔ\x19úd6LVs ³|úöu(â4þ<tl\x96#\x1dh:\x07Çð\x07\x0cÏüÏ±\x96\x93£\x17ÔÄ\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" 400 -
+2024-10-22 11:07:16,548 ERROR werkzeug Thread-3 (process_request_thread) : 172.23.0.3 - - [22/Oct/2024 11:07:16] code 400, message Bad request version ("\x18!è'áßÂÊ\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+2024-10-22 11:07:16,548 INFO werkzeug Thread-3 (process_request_thread) : 172.23.0.3 - - [22/Oct/2024 11:07:16] "[31m[1m\x16\x03\x01\x01&\x01\x00\x01"\x03\x03\x14»iZ\x19\x00fçlØåÂã{Á«j\x10+8Ö\x8bu\x93Ã=õ»\x88ñ\x8fa µ\x83ònt7\x8a\x0fè\x16§vR\x1b]éÇ^ÖÓL\x1cÈ\x1f\x18!è'áßÂÊ\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" 400 -
+2024-10-22 11:07:16,673 ERROR werkzeug Thread-4 (process_request_thread) : 172.23.0.3 - - [22/Oct/2024 11:07:16] code 400, message Bad request version ("\x91£\x11´«ï\x19^\x9fÈIÛÉÏ$+\x97\x18¯ÈE\x01cÁ\x98\x9dÀiáêEñ\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+2024-10-22 11:07:16,673 INFO werkzeug Thread-4 (process_request_thread) : 172.23.0.3 - - [22/Oct/2024 11:07:16] "[31m[1m\x16\x03\x01\x01&\x01\x00\x01"\x03\x03!2 \x96\x07\x09!\x0d\x17ïqÚ|pç\x9e­ùy\x08\x99k\x16ð0÷Ú\x8d[çí\x82 \x91£\x11´«ï\x19^\x9fÈIÛÉÏ$+\x97\x18¯ÈE\x01cÁ\x98\x9dÀiáêEñ\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" 400 -
+2024-10-22 11:07:44,095 ERROR werkzeug Thread-5 (process_request_thread) : 172.23.0.3 - - [22/Oct/2024 11:07:44] code 400, message Bad request version ('95¹É\x9eì®H¡lë7£\x170\x02³(Ê9"@F\xad£.t\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À\'\x00gÀ')
+2024-10-22 11:07:44,096 INFO werkzeug Thread-5 (process_request_thread) : 172.23.0.3 - - [22/Oct/2024 11:07:44] "[31m[1m\x16\x03\x01\x01&\x01\x00\x01"\x03\x03épç±üYMCSé\x12}0\x85]WÃì\x8b«ç\x0eÝ~®{4ÙyË\x08· \x881\x87\x8c 95¹É\x9eì®H¡lë7£\x170\x02³(Ê9"@F­£.t\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" 400 -
+2024-10-22 11:10:14,014 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.24.0.2:5000
+2024-10-22 11:10:14,017 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-22 11:10:47,968 ERROR werkzeug Thread-1 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 11:10:47] code 400, message Bad request version ("9\x02°D¿¾\x12R*\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+2024-10-22 11:10:47,969 INFO werkzeug Thread-1 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 11:10:47] "[31m[1m\x16\x03\x01\x01&\x01\x00\x01"\x03\x032\x89âyÐÒ`\x18\x9eôë\x90p\x04ÒB\x8fU\x9ehn½«©ý ÚÐ\x1c\x0eA| ú\x94æZ\x16\x1c/§uB \x93$Å¼\x1d0é-u\x01\x1d\x0d9\x02°D¿¾\x12R*\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" 400 -
+2024-10-22 11:10:51,538 ERROR werkzeug Thread-2 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 11:10:51] code 400, message Bad request version ("\x18W¸Ø®fªC8\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+2024-10-22 11:10:51,538 INFO werkzeug Thread-2 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 11:10:51] "[31m[1m\x16\x03\x01\x01&\x01\x00\x01"\x03\x03,=¨\x95ãtòö\x9bv%\x00@>\x15ËÁ\x9dZ©Âð\x1a©\x8dYL[SQ\\\x11 ¸+ÉÑ÷.\x89\x9aM«G£Öhç\x19rv¼¢H^ \x18W¸Ø®fªC8\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" 400 -
+2024-10-22 11:10:54,142 ERROR werkzeug Thread-3 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 11:10:54] code 400, message Bad request version ("ÿ¯\x00\x86zNº´\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+2024-10-22 11:10:54,142 INFO werkzeug Thread-3 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 11:10:54] "[31m[1m\x16\x03\x01\x01&\x01\x00\x01"\x03\x03\x90mù'¨nKâvÂÐ¥êV´ÅáÜ\x02\x90\x86è}[\x0eQôx©évä \x92¬}áí8ÔðaÈUäÎ®¬\x10©V2Ë¹\x09»\x0cÿ¯\x00\x86zNº´\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" 400 -
+2024-10-22 11:11:13,660 ERROR werkzeug Thread-4 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 11:11:13] code 400, message Bad request syntax ('\x16\x03\x01\x01&\x01\x00\x01"\x03\x03\x8dX')
+2024-10-22 11:11:13,661 INFO werkzeug Thread-4 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 11:11:13] "[31m[1m\x16\x03\x01\x01&\x01\x00\x01"\x03\x03\x8dX[0m" 400 -
+2024-10-22 11:11:13,778 ERROR werkzeug Thread-5 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 11:11:13] code 400, message Bad request version ("_\x07{\x9a\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+2024-10-22 11:11:13,778 INFO werkzeug Thread-5 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 11:11:13] "[31m[1m\x16\x03\x01\x01&\x01\x00\x01"\x03\x03\x83H\x9e\x7f\x8e\x9b\x12\x01üµã%":\x97åJ:4Ç\x98\x96\x80JLw°\x15\x15ßÆB ½Ecòªuð«O¢5¿\x15åÓöÊÆ\x81Øz{À;\x15.\x0d\x1c_\x07{\x9a\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" 400 -
+2024-10-22 11:14:28,815 ERROR werkzeug Thread-6 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 11:14:28] code 400, message Bad request version ("$\x94\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+2024-10-22 11:14:28,815 INFO werkzeug Thread-6 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 11:14:28] "[31m[1m\x16\x03\x01\x01&\x01\x00\x01"\x03\x03\x8e­¾\x06[\x93Ø.3û\x87\x05\x86\x02Æ\x97\x19\x0dÿ\x827ííÝ÷!]\x11{Yõj \x85ð³ÎÝ\x19\x81ÿ'm2d\x02ff ¼a»÷T5¬\x96]yëç\x0f\x09$\x94\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" 400 -
+2024-10-22 11:14:32,435 ERROR werkzeug Thread-7 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 11:14:32] code 400, message Bad request version ("\x8f\x89Ø\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+2024-10-22 11:14:32,435 INFO werkzeug Thread-7 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 11:14:32] "[31m[1m\x16\x03\x01\x01&\x01\x00\x01"\x03\x03@\x99\x0d5Ó¬\x059C¡)ÄF\x83ù\x19\x9c\x01ö.\x81\x09§j\x0cý\x9eÿËÀRc ÏcK¨\x06æ)ª]vUw¹á¤ç\x8aÈ(XGÁ\x12\x8fç\x95¥p\x0d\x8f\x89Ø\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" 400 -
+2024-10-22 11:14:43,051 ERROR werkzeug Thread-8 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 11:14:43] code 400, message Bad request version ("ëÁaE\x95bd\x02Í§Óá\x8bc\\²¥Ä\x9dßªdC{|ù~\x01\x14Û\x86L\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+2024-10-22 11:14:43,051 INFO werkzeug Thread-8 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 11:14:43] "[31m[1m\x16\x03\x01\x01&\x01\x00\x01"\x03\x03\x9bÖT;¶î\x03³s^\x1cH\x8bguù\x86{ÕÌÏ¤Þ\x19iÐDË7\x9d\x12\x1b ëÁaE\x95bd\x02Í§Óá\x8bc\\²¥Ä\x9dßªdC{|ù~\x01\x14Û\x86L\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" 400 -
+2024-10-22 11:14:43,305 ERROR werkzeug Thread-9 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 11:14:43] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x01&\x01\x00\x01"\x03\x03')
+2024-10-22 11:14:43,305 INFO werkzeug Thread-9 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 11:14:43] "[31m[1m\x16\x03\x01\x01&\x01\x00\x01"\x03\x03\x09ó\x1e[0m" 400 -
+2024-10-22 11:14:47,017 ERROR werkzeug Thread-10 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 11:14:47] code 400, message Bad request version ("{9â\x7f|\x1a\x1b!Îæ×b\x0e]\x8a\x93uM\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+2024-10-22 11:14:47,017 INFO werkzeug Thread-10 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 11:14:47] "[31m[1m\x16\x03\x01\x01&\x01\x00\x01"\x03\x03¼K(±@\x84\x11\x95\x88¥\x12sz \x9fZ'\x97\x97æ TPÚ\x8fõ/{­l\x99¾ \x93ß\x90ÆÖ²¬í¼\x1cOÂ\x96\x85{9â\x7f|\x1a\x1b!Îæ×b\x0e]\x8a\x93uM\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" 400 -
+2024-10-22 11:15:32,626 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.25.0.2:5000
+2024-10-22 11:15:32,626 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-22 11:19:07,757 ERROR werkzeug Thread-1 (process_request_thread) : 172.25.0.3 - - [22/Oct/2024 11:19:07] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x01&\x01\x00\x01"\x03\x03Ë\x89_#\x80\x164xÝ,´³K\x8b--È\x99_×\x89¶\x9aÖ\x18:DÃ\\UÂÂ')
+2024-10-22 11:19:07,757 INFO werkzeug Thread-1 (process_request_thread) : 172.25.0.3 - - [22/Oct/2024 11:19:07] "[31m[1m\x16\x03\x01\x01&\x01\x00\x01"\x03\x03Ë\x89_#\x80\x164xÝ,´³K\x8b--È\x99_×\x89¶\x9aÖ\x18:DÃ\\UÂÂ p».\x00\x10\x96±°«l\x14:ü\x06Î@Ë\x83Ôô\x96Ä~\x8fßÉ|¢"³£ê\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" 400 -
+2024-10-22 11:19:52,208 INFO app Thread-2 (process_request_thread) : Received request
+2024-10-22 11:19:52,215 WARNING app Thread-2 (process_request_thread) : INSECURE CONNECTION: Request made over HTTP
+2024-10-22 11:19:52,252 INFO werkzeug Thread-2 (process_request_thread) : 172.25.0.1 - - [22/Oct/2024 11:19:52] "GET / HTTP/1.1" 200 -
+2024-10-22 11:19:52,561 INFO werkzeug Thread-3 (process_request_thread) : 172.25.0.1 - - [22/Oct/2024 11:19:52] "GET /static/css/pass_gen.css HTTP/1.1" 200 -
+2024-10-22 11:19:52,578 INFO werkzeug Thread-4 (process_request_thread) : 172.25.0.1 - - [22/Oct/2024 11:19:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-22 11:59:17,492 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.24.0.2:5000
+2024-10-22 11:59:17,494 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-22 12:03:16,818 INFO app Thread-1 (process_request_thread) : Received request
+2024-10-22 12:03:17,093 INFO app Thread-1 (process_request_thread) : Password generated: Sev)%50eralR5&uleLie]0
+2024-10-22 12:03:17,114 ERROR app Thread-1 (process_request_thread) : Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 71, in hello
+    return render_template('passgen.html', passw=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/app/templates/passgen.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/app/templates/base.html", line 11, in top-level template code
+    {%block body%}
+  File "/app/templates/passgen.html", line 8, in block 'body'
+    <a href="{{ url_for('generate_password') }}" class="button">Regenerate</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'generate_password'. Did you mean 'hello' instead?
+2024-10-22 12:03:17,124 INFO werkzeug Thread-1 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 12:03:17] "[35m[1mGET / HTTP/1.0[0m" 500 -
+2024-10-22 12:03:43,262 INFO app Thread-2 (process_request_thread) : Received request
+2024-10-22 12:03:43,479 INFO app Thread-2 (process_request_thread) : Password generated: DecideBonyInterv,3ie]8w
+2024-10-22 12:03:43,480 ERROR app Thread-2 (process_request_thread) : Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 71, in hello
+    return render_template('passgen.html', passw=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/app/templates/passgen.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/app/templates/base.html", line 11, in top-level template code
+    {%block body%}
+  File "/app/templates/passgen.html", line 8, in block 'body'
+    <a href="{{ url_for('generate_password') }}" class="button">Regenerate</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'generate_password'. Did you mean 'hello' instead?
+2024-10-22 12:03:43,481 INFO werkzeug Thread-2 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 12:03:43] "[35m[1mGET / HTTP/1.0[0m" 500 -
+2024-10-22 12:03:43,513 INFO werkzeug Thread-3 (process_request_thread) : 172.24.0.3 - - [22/Oct/2024 12:03:43] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+2024-10-22 12:05:31,311 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.25.0.2:5000
+2024-10-22 12:05:31,312 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-22 12:05:58,217 INFO app Thread-1 (process_request_thread) : Received request
+2024-10-22 12:05:58,444 INFO app Thread-1 (process_request_thread) : Password generated: DetectF$(£i1rstFeed9back1
+2024-10-22 12:05:58,451 ERROR app Thread-1 (process_request_thread) : Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 69, in hello
+    return render_template('passgen.html', passw=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/app/templates/passgen.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/app/templates/base.html", line 11, in top-level template code
+    {%block body%}
+  File "/app/templates/passgen.html", line 8, in block 'body'
+    <a href="{{ url_for('generate_password') }}" class="button">Regenerate</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'generate_password'. Did you mean 'hello' instead?
+2024-10-22 12:05:58,462 INFO werkzeug Thread-1 (process_request_thread) : 172.25.0.3 - - [22/Oct/2024 12:05:58] "[35m[1mGET / HTTP/1.0[0m" 500 -
+2024-10-22 12:09:22,184 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.26.0.2:5000
+2024-10-22 12:09:22,185 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-22 12:09:32,907 INFO app Thread-1 (process_request_thread) : Received request
+2024-10-22 12:09:33,096 INFO app Thread-1 (process_request_thread) : Password generated: SplitLo6n]879g$`Stri@d9e[
+2024-10-22 12:09:33,100 ERROR app Thread-1 (process_request_thread) : Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 69, in hello
+    return render_template('passgen.html', passw=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/app/templates/passgen.html", line 10, in template
+    <a href="{{ url_for('hello) }}" class="button">Regenerate</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: unexpected char "'" at 268
+2024-10-22 12:09:33,108 INFO werkzeug Thread-1 (process_request_thread) : 172.26.0.3 - - [22/Oct/2024 12:09:33] "[35m[1mGET / HTTP/1.0[0m" 500 -
+2024-10-22 12:10:57,036 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.27.0.2:5000
+2024-10-22 12:10:57,036 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-22 12:11:30,908 INFO app Thread-1 (process_request_thread) : Received request
+2024-10-22 12:11:31,143 INFO app Thread-1 (process_request_thread) : Password generated: Pre8vent&In?ternat03i.ona@l8K>ing0
+2024-10-22 12:11:31,145 ERROR app Thread-1 (process_request_thread) : Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 69, in home
+    return render_template('passgen.html', passw=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/app/templates/passgen.html", line 10, in template
+    <a href="{{ url_for('home) }}" class="button">Regenerate</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: unexpected char "'" at 268
+2024-10-22 12:11:31,148 INFO werkzeug Thread-1 (process_request_thread) : 172.27.0.3 - - [22/Oct/2024 12:11:31] "[35m[1mGET / HTTP/1.0[0m" 500 -
+2024-10-22 12:14:21,295 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.28.0.2:5000
+2024-10-22 12:14:21,298 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-22 12:14:42,514 INFO app Thread-1 (process_request_thread) : Received request
+2024-10-22 12:14:42,699 INFO app Thread-1 (process_request_thread) : Password generated: Cooperat#ive4Ride1Symbolize.
+2024-10-22 12:14:42,703 INFO werkzeug Thread-1 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:42] "GET / HTTP/1.0" 200 -
+2024-10-22 12:14:42,729 INFO werkzeug Thread-2 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:42] "GET /static/css/pass_gen.css HTTP/1.0" 200 -
+2024-10-22 12:14:46,812 INFO app Thread-3 (process_request_thread) : Received request
+2024-10-22 12:14:46,986 INFO app Thread-3 (process_request_thread) : Password generated: A:pa5]rtm5en,tS3caly!Vanish4
+2024-10-22 12:14:46,987 INFO werkzeug Thread-3 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:46] "GET / HTTP/1.0" 200 -
+2024-10-22 12:14:47,003 INFO werkzeug Thread-4 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:47] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:14:47,725 INFO app Thread-5 (process_request_thread) : Received request
+2024-10-22 12:14:47,898 INFO app Thread-5 (process_request_thread) : Password generated: Hu4rt:1fu]@lEs]timate7Consta8nt
+2024-10-22 12:14:47,899 INFO werkzeug Thread-5 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:47] "GET / HTTP/1.0" 200 -
+2024-10-22 12:14:47,930 INFO werkzeug Thread-6 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:47] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:14:48,692 INFO app Thread-7 (process_request_thread) : Received request
+2024-10-22 12:14:48,868 INFO app Thread-7 (process_request_thread) : Password generated: You£ngScr8[`7ibbl£eOt7h5er
+2024-10-22 12:14:48,869 INFO werkzeug Thread-7 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:48] "GET / HTTP/1.0" 200 -
+2024-10-22 12:14:48,895 INFO werkzeug Thread-8 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:48] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:14:49,675 INFO app Thread-9 (process_request_thread) : Received request
+2024-10-22 12:14:49,853 INFO app Thread-9 (process_request_thread) : Password generated: Fi>nis3h0e(dS(tr5ingLin3,k
+2024-10-22 12:14:49,854 INFO werkzeug Thread-9 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:49] "GET / HTTP/1.0" 200 -
+2024-10-22 12:14:49,876 INFO werkzeug Thread-10 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:49] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:14:50,663 INFO app Thread-11 (process_request_thread) : Received request
+2024-10-22 12:14:50,841 INFO app Thread-11 (process_request_thread) : Password generated: Imagina9&ryEffic2ienc3^yYell(
+2024-10-22 12:14:50,842 INFO werkzeug Thread-11 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:50] "GET / HTTP/1.0" 200 -
+2024-10-22 12:14:50,869 INFO werkzeug Thread-12 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:50] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:14:51,643 INFO app Thread-13 (process_request_thread) : Received request
+2024-10-22 12:14:51,807 INFO app Thread-13 (process_request_thread) : Password generated: 1Dimple6dPol(7`]is2h0Sh£@are
+2024-10-22 12:14:51,808 INFO werkzeug Thread-13 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:51] "GET / HTTP/1.0" 200 -
+2024-10-22 12:14:51,824 INFO werkzeug Thread-14 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:51] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:14:52,615 INFO app Thread-15 (process_request_thread) : Received request
+2024-10-22 12:14:52,788 INFO app Thread-15 (process_request_thread) : Password generated: KnitD1ownrightC]lass
+2024-10-22 12:14:52,789 INFO werkzeug Thread-15 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:52] "GET / HTTP/1.0" 200 -
+2024-10-22 12:14:52,811 INFO werkzeug Thread-16 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:52] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:14:53,553 INFO app Thread-17 (process_request_thread) : Received request
+2024-10-22 12:14:53,755 INFO app Thread-17 (process_request_thread) : Password generated: 7[Strid0entFor!(tuneFasten2
+2024-10-22 12:14:53,756 INFO werkzeug Thread-17 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:53] "GET / HTTP/1.0" 200 -
+2024-10-22 12:14:53,800 INFO werkzeug Thread-18 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:53] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:14:54,641 INFO app Thread-19 (process_request_thread) : Received request
+2024-10-22 12:14:54,821 INFO app Thread-19 (process_request_thread) : Password generated: St,r@idePr3o08duc]t|ive6Explanati9on£
+2024-10-22 12:14:54,822 INFO werkzeug Thread-19 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:54] "GET / HTTP/1.0" 200 -
+2024-10-22 12:14:54,845 INFO werkzeug Thread-20 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:54] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:14:55,685 INFO app Thread-21 (process_request_thread) : Received request
+2024-10-22 12:14:55,903 INFO app Thread-21 (process_request_thread) : Password generated: )High-levelPri6zeSpring
+2024-10-22 12:14:55,904 INFO werkzeug Thread-21 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:55] "GET / HTTP/1.0" 200 -
+2024-10-22 12:14:55,950 INFO werkzeug Thread-22 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:55] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:14:56,605 INFO app Thread-23 (process_request_thread) : Received request
+2024-10-22 12:14:56,783 INFO app Thread-23 (process_request_thread) : Password generated: ?CheeryBa3thOvercome
+2024-10-22 12:14:56,784 INFO werkzeug Thread-23 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:56] "GET / HTTP/1.0" 200 -
+2024-10-22 12:14:56,815 INFO werkzeug Thread-24 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:14:56] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:20:41,943 INFO app Thread-25 (process_request_thread) : Received request
+2024-10-22 12:20:42,155 INFO app Thread-25 (process_request_thread) : Password generated: Foret]e6llMoodTorn
+2024-10-22 12:20:42,156 INFO werkzeug Thread-25 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:42] "GET / HTTP/1.0" 200 -
+2024-10-22 12:20:42,205 INFO werkzeug Thread-26 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:42] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:20:42,926 INFO app Thread-27 (process_request_thread) : Received request
+2024-10-22 12:20:43,130 INFO app Thread-27 (process_request_thread) : Password generated: }SpinTimeEvil4
+2024-10-22 12:20:43,131 INFO werkzeug Thread-27 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:43] "GET / HTTP/1.0" 200 -
+2024-10-22 12:20:43,173 INFO werkzeug Thread-28 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:43] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:20:43,731 INFO app Thread-29 (process_request_thread) : Received request
+2024-10-22 12:20:43,922 INFO app Thread-29 (process_request_thread) : Password generated: Friend&SarcasticArgu2e
+2024-10-22 12:20:43,922 INFO werkzeug Thread-29 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:43] "GET / HTTP/1.0" 200 -
+2024-10-22 12:20:43,956 INFO werkzeug Thread-30 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:43] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:20:44,467 INFO app Thread-31 (process_request_thread) : Received request
+2024-10-22 12:20:44,667 INFO app Thread-31 (process_request_thread) : Password generated: FetchDow8nri8g5£htBric@]k
+2024-10-22 12:20:44,667 INFO werkzeug Thread-31 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:44] "GET / HTTP/1.0" 200 -
+2024-10-22 12:20:44,691 INFO werkzeug Thread-32 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:44] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:20:45,480 INFO app Thread-33 (process_request_thread) : Received request
+2024-10-22 12:20:45,676 INFO app Thread-33 (process_request_thread) : Password generated: CoatS5cribb8<l:eUpr0ight(
+2024-10-22 12:20:45,677 INFO werkzeug Thread-33 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:45] "GET / HTTP/1.0" 200 -
+2024-10-22 12:20:45,702 INFO werkzeug Thread-34 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:45] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:20:46,050 INFO app Thread-35 (process_request_thread) : Received request
+2024-10-22 12:20:46,301 INFO app Thread-35 (process_request_thread) : Password generated: Gl#6|oo&41myRiseTel^l3
+2024-10-22 12:20:46,302 INFO werkzeug Thread-35 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:46] "GET / HTTP/1.0" 200 -
+2024-10-22 12:20:46,334 INFO werkzeug Thread-36 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:46] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:20:46,782 INFO app Thread-37 (process_request_thread) : Received request
+2024-10-22 12:20:47,001 INFO app Thread-37 (process_request_thread) : Password generated: Majo@]rMostTra4nsc2ribe
+2024-10-22 12:20:47,002 INFO werkzeug Thread-37 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:47] "GET / HTTP/1.0" 200 -
+2024-10-22 12:20:47,041 INFO werkzeug Thread-38 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:47] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:20:49,301 INFO app Thread-39 (process_request_thread) : Received request
+2024-10-22 12:20:49,492 INFO app Thread-39 (process_request_thread) : Password generated: C:#razyOrganiz4,e£S36pars6e
+2024-10-22 12:20:49,493 INFO werkzeug Thread-39 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:49] "GET / HTTP/1.0" 200 -
+2024-10-22 12:20:49,515 INFO werkzeug Thread-40 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:49] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:20:50,700 INFO app Thread-41 (process_request_thread) : Received request
+2024-10-22 12:20:50,943 INFO app Thread-41 (process_request_thread) : Password generated: Sav87i7n6gsH,£ungr0yCo?<s£t
+2024-10-22 12:20:50,943 INFO werkzeug Thread-41 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:50] "GET / HTTP/1.0" 200 -
+2024-10-22 12:20:50,966 INFO werkzeug Thread-42 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:50] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:20:51,406 INFO app Thread-43 (process_request_thread) : Received request
+2024-10-22 12:20:51,639 INFO app Thread-43 (process_request_thread) : Password generated: 4MovieG8}7r2easePriv@a$t@e
+2024-10-22 12:20:51,640 INFO werkzeug Thread-43 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:51] "GET / HTTP/1.0" 200 -
+2024-10-22 12:20:51,661 INFO werkzeug Thread-44 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:51] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
+2024-10-22 12:20:52,142 INFO app Thread-45 (process_request_thread) : Received request
+2024-10-22 12:20:52,341 INFO app Thread-45 (process_request_thread) : Password generated: AllowMix5tur)8eTrim:
+2024-10-22 12:20:52,342 INFO werkzeug Thread-45 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:52] "GET / HTTP/1.0" 200 -
+2024-10-22 12:20:52,369 INFO werkzeug Thread-46 (process_request_thread) : 172.28.0.3 - - [22/Oct/2024 12:20:52] "[36mGET /static/css/pass_gen.css HTTP/1.0[0m" 304 -
