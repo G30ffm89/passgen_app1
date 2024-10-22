@@ -45,34 +45,39 @@ def hello():
     if request.scheme == 'http':
         app.logger.warning("INSECURE CONNECTION: Request made over HTTP")
 
-    return render_template("home.html")
+        return render_template("home.html")
 
-@app.route('/generate_password', methods=['GET'])
-def generate_password():
-    password = passwordgen.getpassword()
-
-    new_password_entry = Password()
-    new_password_entry.set_password(password)
-
-    while True:
+    else:
         password = passwordgen.getpassword()
+
         new_password_entry = Password()
         new_password_entry.set_password(password)
 
-        try:
-            db.session.add(new_password_entry)
-            db.session.commit() 
-            break  
-        except SQLAlchemy.exc.IntegrityError:
-            db.session.rollback()  
-            app.logger.warning("Error rolling back ")
+        while True:
+            password = passwordgen.getpassword()
+            new_password_entry = Password()
+            new_password_entry.set_password(password)
 
-    #TODO - Save password hashes and check to make sure the password wasn't generated before
-    #Needs to match STIG compliance checks
+            try:
+                db.session.add(new_password_entry)
+                db.session.commit() 
+                break  
+            except SQLAlchemy.exc.IntegrityError:
+                db.session.rollback()  
+                app.logger.warning("Error rolling back ")
 
-    app.logger.info(f"Password generated: {password}")
+        #TODO - Save password hashes and check to make sure the password wasn't generated before the not possible due to the chance of two numbers matching 
+        #Needs to match STIG compliance checks
 
-    return render_template('passgen.html', passw=password)
+        app.logger.info(f"Password generated: {password}")
+
+        return render_template('passgen.html', passw=password)
+
+    
+
+@app.route('/generate_password', methods=['GET'])
+def generate_password():
+   
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
