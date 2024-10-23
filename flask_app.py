@@ -1,5 +1,5 @@
 import logging
-from flask import Flask, request, render_template
+from flask import Flask, redirect, render_template, url_for
 import passwordgen
 from dotenv import load_dotenv
 from flask_sqlalchemy import SQLAlchemy
@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 load_dotenv()
 app.config['SECRET_KEY'] = os.urandom(24)
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///passwordgen.db"
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('database')
 #TODO - Need to check what the logging requirements for the STIG are TLS_AES_256_GCM_SHA384 tls 1.3 more secure than 1.2
 #add back slashes
 db = SQLAlchemy(app)
@@ -68,7 +68,9 @@ def home():
 
     return render_template('passgen.html', passw=password)
 
-       
+@app.errorhandler(404) #404 redirects
+def page_not_found(error):
+    return redirect(url_for('home'))         
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')

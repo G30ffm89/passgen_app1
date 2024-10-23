@@ -1,7 +1,7 @@
 import random
 import string
 from random import choice
-def getpassword():
+def getpassword(): #mmouse generates entropy 
     frequncy = random.randint(1,5) # used for the frequency of random nums and syms
     symbols = "!£$%^&*():@?><.,|¬`#][@}]" # can be expanded
     numbers = "1234567890"

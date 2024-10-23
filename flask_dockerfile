@@ -8,11 +8,10 @@ COPY nouns.txt /app/nouns.txt
 COPY adjects.txt /app/adjects.txt
 COPY verbs.txt /app/verbs.txt
 COPY passwordgen.py /app/passwordgen.py
+COPY favicon.ico /app/favicon.ico
 
 RUN mkdir -p /app/instance /app/static/css /app/templates 
 RUN mkdir -p /app/logs
-
-RUN chown 1000:1000 /app/logs
 
 COPY templates/base.html /app/templates/base.html
 COPY templates/passgen.html /app/templates/passgen.html

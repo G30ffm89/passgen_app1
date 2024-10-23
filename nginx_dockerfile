@@ -2,5 +2,16 @@ FROM nginx:alpine
 
 COPY nginx.conf /etc/nginx/nginx.conf
 
+RUN chown root:root /etc/nginx/nginx.conf
+RUN chmod 600 /etc/nginx/nginx.conf
+
 COPY passgen.crt /etc/ssl/certs/passgen.crt
 COPY passgen.key /etc/ssl/private/passgen.key
+
+RUN chown root:root /etc/ssl/private/passgen.key
+RUN chmod 600 /etc/ssl/private/passgen.key
+
+RUN chown root:root /etc/ssl/certs/passgen.crt
+RUN chmod 600 /etc/ssl/certs/passgen.crt
+
+RUN apk add nginx-mod-http-headers-more
