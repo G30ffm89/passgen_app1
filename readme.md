@@ -19,3 +19,7 @@ sudo cp passgen.pem  /usr/local/share/ca-certificates/
 
 sudo update-ca-certificates
 trust list | grep -i "localhost"
+
+reference link 
+ From https://cssgradient.io/gradient-backgrounds/ for the .css background 
+ https://dev.to/goke/securing-your-flask-application-hashing-passwords-tutorial-2f0p - password

@@ -24,3 +24,44 @@
 2024-10-24 13:16:50,385 INFO app Thread-10 (process_request_thread) : Password generated: Love6Short-4ter|mS%7hri?nk
 2024-10-24 13:16:50,385 INFO werkzeug Thread-10 (process_request_thread) : 172.20.0.3 - - [24/Oct/2024 13:16:50] "GET / HTTP/1.0" 200 -
 2024-10-24 13:16:50,402 INFO werkzeug Thread-11 (process_request_thread) : 172.20.0.3 - - [24/Oct/2024 13:16:50] "GET /static/css/pass_gen.css HTTP/1.0" 200 -
+2024-10-24 13:48:10,787 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.2:5000
+2024-10-24 13:48:10,790 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-10-24 13:48:49,672 INFO app Thread-1 (process_request_thread) : Received request
+2024-10-24 13:48:50,051 INFO app Thread-1 (process_request_thread) : Password generated: E£xperi|enceSt0ai%8nedD,i0sapprove6
+2024-10-24 13:48:50,110 INFO werkzeug Thread-1 (process_request_thread) : 172.18.0.3 - - [24/Oct/2024 13:48:50] "GET / HTTP/1.0" 200 -
+2024-10-24 13:48:50,342 INFO werkzeug Thread-2 (process_request_thread) : 172.18.0.3 - - [24/Oct/2024 13:48:50] "GET /static/css/pass_gen.css HTTP/1.0" 200 -
+2024-10-24 13:48:50,347 INFO werkzeug Thread-3 (process_request_thread) : 172.18.0.3 - - [24/Oct/2024 13:48:50] "[32mGET /favicon.ico HTTP/1.0[0m" 302 -
+2024-10-24 13:56:15,971 INFO app Thread-4 (process_request_thread) : Received request
+2024-10-24 13:56:16,165 INFO app Thread-4 (process_request_thread) : Password generated: 8Gorg^9]9eousWond2e[rFl`ow
+2024-10-24 13:56:16,166 INFO werkzeug Thread-4 (process_request_thread) : 172.18.0.3 - - [24/Oct/2024 13:56:16] "GET / HTTP/1.0" 200 -
+2024-10-24 13:56:16,199 INFO werkzeug Thread-5 (process_request_thread) : 172.18.0.3 - - [24/Oct/2024 13:56:16] "GET /static/css/pass_gen.css HTTP/1.0" 200 -
+2024-10-24 13:56:16,208 INFO werkzeug Thread-6 (process_request_thread) : 172.18.0.3 - - [24/Oct/2024 13:56:16] "[32mGET /favicon.ico HTTP/1.0[0m" 302 -
+2024-10-24 13:56:43,133 INFO app Thread-7 (process_request_thread) : Received request
+2024-10-24 13:56:43,289 INFO app Thread-7 (process_request_thread) : Password generated: 3Pala@tableHeavyEmploy
+2024-10-24 13:56:43,290 INFO werkzeug Thread-7 (process_request_thread) : 172.18.0.3 - - [24/Oct/2024 13:56:43] "GET / HTTP/1.0" 200 -
+2024-10-24 13:56:43,305 INFO werkzeug Thread-8 (process_request_thread) : 172.18.0.3 - - [24/Oct/2024 13:56:43] "[32mPOST /sdk HTTP/1.0[0m" 302 -
+2024-10-24 13:56:43,307 INFO werkzeug Thread-9 (process_request_thread) : 172.18.0.3 - - [24/Oct/2024 13:56:43] "[32mGET /nmaplowercheck1729778204 HTTP/1.0[0m" 302 -
+2024-10-24 13:56:42,742 INFO werkzeug Thread-10 (process_request_thread) : 172.18.0.3 - - [24/Oct/2024 13:56:42] "[32mGET /evox/about HTTP/1.0[0m" 302 -
+2024-10-24 13:56:42,749 INFO werkzeug Thread-11 (process_request_thread) : 172.18.0.3 - - [24/Oct/2024 13:56:42] "[32mGET /HNAP1 HTTP/1.0[0m" 302 -
+2024-10-24 13:56:42,761 INFO app Thread-12 (process_request_thread) : Received request
+2024-10-24 13:56:42,909 INFO app Thread-12 (process_request_thread) : Password generated: Pu3nchE!n)ergeti3cQueen
+2024-10-24 13:56:42,910 INFO werkzeug Thread-12 (process_request_thread) : 172.18.0.3 - - [24/Oct/2024 13:56:42] "GET / HTTP/1.0" 200 -
+2024-10-24 13:56:42,916 INFO app Thread-13 (process_request_thread) : Received request
+2024-10-24 13:56:43,090 INFO app Thread-13 (process_request_thread) : Password generated: D4iffic<?ultRewardCho5ke
+2024-10-24 13:56:43,091 INFO werkzeug Thread-13 (process_request_thread) : 172.18.0.3 - - [24/Oct/2024 13:56:43] "GET / HTTP/1.0" 200 -
+2024-10-24 14:02:08,214 INFO app Thread-14 (process_request_thread) : Received request
+2024-10-24 14:02:08,370 INFO app Thread-14 (process_request_thread) : Password generated: HomelyTopic>Shrin8k
+2024-10-24 14:02:08,370 INFO werkzeug Thread-14 (process_request_thread) : 172.18.0.3 - - [24/Oct/2024 14:02:08] "GET / HTTP/1.0" 200 -
+2024-10-24 14:02:08,388 INFO werkzeug Thread-15 (process_request_thread) : 172.18.0.3 - - [24/Oct/2024 14:02:08] "[32mGET /nmaplowercheck1729778535 HTTP/1.0[0m" 302 -
+2024-10-24 14:02:08,388 INFO werkzeug Thread-16 (process_request_thread) : 172.18.0.3 - - [24/Oct/2024 14:02:08] "[32mPOST /sdk HTTP/1.0[0m" 302 -
+2024-10-24 14:02:08,395 INFO werkzeug Thread-17 (process_request_thread) : 172.18.0.3 - - [24/Oct/2024 14:02:08] "[32mGET /HNAP1 HTTP/1.0[0m" 302 -
+2024-10-24 14:02:08,400 INFO werkzeug Thread-18 (process_request_thread) : 172.18.0.3 - - [24/Oct/2024 14:02:08] "[32mGET /evox/about HTTP/1.0[0m" 302 -
+2024-10-24 14:02:08,408 INFO app Thread-19 (process_request_thread) : Received request
+2024-10-24 14:02:08,562 INFO app Thread-19 (process_request_thread) : Password generated: DeviceZo6omEdibl£e
+2024-10-24 14:02:08,563 INFO werkzeug Thread-19 (process_request_thread) : 172.18.0.3 - - [24/Oct/2024 14:02:08] "GET / HTTP/1.0" 200 -
+2024-10-24 14:02:08,569 INFO app Thread-20 (process_request_thread) : Received request
+2024-10-24 14:02:08,742 INFO app Thread-20 (process_request_thread) : Password generated: RequiredBareA>8irport
+2024-10-24 14:02:08,743 INFO werkzeug Thread-20 (process_request_thread) : 172.18.0.3 - - [24/Oct/2024 14:02:08] "GET / HTTP/1.0" 200 -
