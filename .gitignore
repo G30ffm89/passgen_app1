@@ -5,3 +5,4 @@ passgen.crt
 passgen.key
 passgen.pem
 passgen.pfx
+logs/
