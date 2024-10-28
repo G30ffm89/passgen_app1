@@ -1,0 +1,2603 @@
+{
+  "vulnerability": {
+    "id": "CVE-2024-2398",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-2398",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2024-2398"
+    ],
+    "description": "When an application tells libcurl it wants to allow HTTP/2 server push, and the amount of received headers for the push surpasses the maximum allowed limit (1000), libcurl aborts the server push. When aborting, libcurl inadvertently does not free all the previously allocated headers and instead leaks the memory.  Further, this error condition fails silently and is therefore not easily detected by an application.",
+    "cvss": [],
+    "fix": {
+      "versions": [
+        "7.88.1-10+deb12u6"
+      ],
+      "state": "fixed"
+    },
+    "advisories": []
+  },
+  "relatedVulnerabilities": [
+    {
+      "id": "CVE-2024-2398",
+      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-2398",
+      "namespace": "nvd:cpe",
+      "severity": "High",
+      "urls": [
+        "http://seclists.org/fulldisclosure/2024/Jul/18",
+        "http://seclists.org/fulldisclosure/2024/Jul/19",
+        "http://seclists.org/fulldisclosure/2024/Jul/20",
+        "http://www.openwall.com/lists/oss-security/2024/03/27/3",
+        "https://curl.se/docs/CVE-2024-2398.html",
+        "https://curl.se/docs/CVE-2024-2398.json",
+        "https://hackerone.com/reports/2402845",
+        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2D44YLAUFJU6BZ4XFG2FYV7SBKXB5IZ6/",
+        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GMD6UYKCCRCYETWQZUJ65ZRFULT6SHLI/",
+        "https://security.netapp.com/advisory/ntap-20240503-0009/",
+        "https://support.apple.com/kb/HT214118",
+        "https://support.apple.com/kb/HT214119",
+        "https://support.apple.com/kb/HT214120"
+      ],
+      "description": "When an application tells libcurl it wants to allow HTTP/2 server push, and the amount of received headers for the push surpasses the maximum allowed limit (1000), libcurl aborts the server push. When aborting, libcurl inadvertently does not free all the previously allocated headers and instead leaks the memory.  Further, this error condition fails silently and is therefore not easily detected by an application.",
+      "cvss": [
+        {
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+          "metrics": {
+            "baseScore": 8.6,
+            "exploitabilityScore": 3.9,
+            "impactScore": 4.7
+          },
+          "vendorMetadata": {}
+        }
+      ]
+    }
+  ],
+  "matchDetails": [
+    {
+      "type": "exact-direct-match",
+      "matcher": "dpkg-matcher",
+      "searchedBy": {
+        "distro": {
+          "type": "debian",
+          "version": "12"
+        },
+        "namespace": "debian:distro:debian:12",
+        "package": {
+          "name": "curl",
+          "version": "7.88.1-10+deb12u5"
+        }
+      },
+      "found": {
+        "versionConstraint": "< 7.88.1-10+deb12u6 (deb)",
+        "vulnerabilityID": "CVE-2024-2398"
+      }
+    }
+  ],
+  "artifact": {
+    "id": "c5f449e1b9af741b",
+    "name": "curl",
+    "version": "7.88.1-10+deb12u5",
+    "type": "deb",
+    "locations": [
+      {
+        "path": "/usr/share/doc/curl/copyright",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      },
+      {
+        "path": "/var/lib/dpkg/info/curl.list",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      },
+      {
+        "path": "/var/lib/dpkg/info/curl.md5sums",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      },
+      {
+        "path": "/var/lib/dpkg/status",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      }
+    ],
+    "language": "",
+    "licenses": [
+      "BSD-3-Clause",
+      "BSD-3-clause",
+      "BSD-4-Clause-UC",
+      "FSFULLR",
+      "GPL-2",
+      "GPL-2+",
+      "GPL-3+",
+      "ISC",
+      "OLDAP-2.8",
+      "X11",
+      "curl"
+    ],
+    "cpes": [
+      "cpe:2.3:a:curl:curl:7.88.1-10+deb12u5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/curl@7.88.1-10%2Bdeb12u5?arch=amd64&distro=debian-12",
+    "upstreams": []
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2024-2398",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-2398",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2024-2398"
+    ],
+    "description": "When an application tells libcurl it wants to allow HTTP/2 server push, and the amount of received headers for the push surpasses the maximum allowed limit (1000), libcurl aborts the server push. When aborting, libcurl inadvertently does not free all the previously allocated headers and instead leaks the memory.  Further, this error condition fails silently and is therefore not easily detected by an application.",
+    "cvss": [],
+    "fix": {
+      "versions": [
+        "7.88.1-10+deb12u6"
+      ],
+      "state": "fixed"
+    },
+    "advisories": []
+  },
+  "relatedVulnerabilities": [
+    {
+      "id": "CVE-2024-2398",
+      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-2398",
+      "namespace": "nvd:cpe",
+      "severity": "High",
+      "urls": [
+        "http://seclists.org/fulldisclosure/2024/Jul/18",
+        "http://seclists.org/fulldisclosure/2024/Jul/19",
+        "http://seclists.org/fulldisclosure/2024/Jul/20",
+        "http://www.openwall.com/lists/oss-security/2024/03/27/3",
+        "https://curl.se/docs/CVE-2024-2398.html",
+        "https://curl.se/docs/CVE-2024-2398.json",
+        "https://hackerone.com/reports/2402845",
+        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2D44YLAUFJU6BZ4XFG2FYV7SBKXB5IZ6/",
+        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GMD6UYKCCRCYETWQZUJ65ZRFULT6SHLI/",
+        "https://security.netapp.com/advisory/ntap-20240503-0009/",
+        "https://support.apple.com/kb/HT214118",
+        "https://support.apple.com/kb/HT214119",
+        "https://support.apple.com/kb/HT214120"
+      ],
+      "description": "When an application tells libcurl it wants to allow HTTP/2 server push, and the amount of received headers for the push surpasses the maximum allowed limit (1000), libcurl aborts the server push. When aborting, libcurl inadvertently does not free all the previously allocated headers and instead leaks the memory.  Further, this error condition fails silently and is therefore not easily detected by an application.",
+      "cvss": [
+        {
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+          "metrics": {
+            "baseScore": 8.6,
+            "exploitabilityScore": 3.9,
+            "impactScore": 4.7
+          },
+          "vendorMetadata": {}
+        }
+      ]
+    }
+  ],
+  "matchDetails": [
+    {
+      "type": "exact-indirect-match",
+      "matcher": "dpkg-matcher",
+      "searchedBy": {
+        "distro": {
+          "type": "debian",
+          "version": "12"
+        },
+        "namespace": "debian:distro:debian:12",
+        "package": {
+          "name": "curl",
+          "version": "7.88.1-10+deb12u5"
+        }
+      },
+      "found": {
+        "versionConstraint": "< 7.88.1-10+deb12u6 (deb)",
+        "vulnerabilityID": "CVE-2024-2398"
+      }
+    }
+  ],
+  "artifact": {
+    "id": "3425ee7723f69b83",
+    "name": "libcurl4",
+    "version": "7.88.1-10+deb12u5",
+    "type": "deb",
+    "locations": [
+      {
+        "path": "/usr/share/doc/libcurl4/copyright",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      },
+      {
+        "path": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      },
+      {
+        "path": "/var/lib/dpkg/status",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      }
+    ],
+    "language": "",
+    "licenses": [
+      "BSD-3-Clause",
+      "BSD-3-clause",
+      "BSD-4-Clause-UC",
+      "FSFULLR",
+      "GPL-2",
+      "GPL-2+",
+      "GPL-3+",
+      "ISC",
+      "OLDAP-2.8",
+      "X11",
+      "curl"
+    ],
+    "cpes": [
+      "cpe:2.3:a:libcurl4:libcurl4:7.88.1-10+deb12u5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libcurl4@7.88.1-10%2Bdeb12u5?arch=amd64&distro=debian-12&upstream=curl",
+    "upstreams": [
+      {
+        "name": "curl"
+      }
+    ]
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2024-45490",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-45490",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2024-45490"
+    ],
+    "description": "An issue was discovered in libexpat before 2.6.3. xmlparse.c does not reject a negative length for XML_ParseBuffer.",
+    "cvss": [],
+    "fix": {
+      "versions": [
+        "2.5.0-1+deb12u1"
+      ],
+      "state": "fixed"
+    },
+    "advisories": [
+      {
+        "id": "DSA-5770-1",
+        "link": "https://security-tracker.debian.org/tracker/DSA-5770-1"
+      }
+    ]
+  },
+  "relatedVulnerabilities": [
+    {
+      "id": "CVE-2024-45490",
+      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-45490",
+      "namespace": "nvd:cpe",
+      "severity": "High",
+      "urls": [
+        "https://github.com/libexpat/libexpat/issues/887",
+        "https://github.com/libexpat/libexpat/pull/890"
+      ],
+      "description": "An issue was discovered in libexpat before 2.6.3. xmlparse.c does not reject a negative length for XML_ParseBuffer.",
+      "cvss": [
+        {
+          "source": "nvd@nist.gov",
+          "type": "Primary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "metrics": {
+            "baseScore": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+          },
+          "vendorMetadata": {}
+        },
+        {
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metrics": {
+            "baseScore": 9.8,
+            "exploitabilityScore": 3.9,
+            "impactScore": 5.9
+          },
+          "vendorMetadata": {}
+        }
+      ]
+    }
+  ],
+  "matchDetails": [
+    {
+      "type": "exact-indirect-match",
+      "matcher": "dpkg-matcher",
+      "searchedBy": {
+        "distro": {
+          "type": "debian",
+          "version": "12"
+        },
+        "namespace": "debian:distro:debian:12",
+        "package": {
+          "name": "expat",
+          "version": "2.5.0-1"
+        }
+      },
+      "found": {
+        "versionConstraint": "< 2.5.0-1+deb12u1 (deb)",
+        "vulnerabilityID": "CVE-2024-45490"
+      }
+    }
+  ],
+  "artifact": {
+    "id": "647da6a471c14b1e",
+    "name": "libexpat1",
+    "version": "2.5.0-1",
+    "type": "deb",
+    "locations": [
+      {
+        "path": "/usr/share/doc/libexpat1/copyright",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/info/libexpat1:amd64.md5sums",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/status",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      }
+    ],
+    "language": "",
+    "licenses": [
+      "MIT"
+    ],
+    "cpes": [
+      "cpe:2.3:a:libexpat1:libexpat1:2.5.0-1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libexpat1@2.5.0-1?arch=amd64&distro=debian-12&upstream=expat",
+    "upstreams": [
+      {
+        "name": "expat"
+      }
+    ]
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2023-52425",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-52425",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2023-52425"
+    ],
+    "description": "libexpat through 2.5.0 allows a denial of service (resource consumption) because many full reparsings are required in the case of a large token for which multiple buffer fills are needed.",
+    "cvss": [],
+    "fix": {
+      "versions": [],
+      "state": "wont-fix"
+    },
+    "advisories": []
+  },
+  "relatedVulnerabilities": [
+    {
+      "id": "CVE-2023-52425",
+      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-52425",
+      "namespace": "nvd:cpe",
+      "severity": "High",
+      "urls": [
+        "http://www.openwall.com/lists/oss-security/2024/03/20/5",
+        "https://github.com/libexpat/libexpat/pull/789",
+        "https://lists.debian.org/debian-lts-announce/2024/04/msg00006.html",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PNRIHC7DVVRAIWFRGV23Y6UZXFBXSQDB/",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/WNUBSGZFEZOBHJFTAD42SAN4ATW2VEMV/",
+        "https://security.netapp.com/advisory/ntap-20240614-0003/"
+      ],
+      "description": "libexpat through 2.5.0 allows a denial of service (resource consumption) because many full reparsings are required in the case of a large token for which multiple buffer fills are needed.",
+      "cvss": [
+        {
+          "source": "nvd@nist.gov",
+          "type": "Primary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "metrics": {
+            "baseScore": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+          },
+          "vendorMetadata": {}
+        },
+        {
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "metrics": {
+            "baseScore": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+          },
+          "vendorMetadata": {}
+        }
+      ]
+    }
+  ],
+  "matchDetails": [
+    {
+      "type": "exact-indirect-match",
+      "matcher": "dpkg-matcher",
+      "searchedBy": {
+        "distro": {
+          "type": "debian",
+          "version": "12"
+        },
+        "namespace": "debian:distro:debian:12",
+        "package": {
+          "name": "expat",
+          "version": "2.5.0-1"
+        }
+      },
+      "found": {
+        "versionConstraint": "none (deb)",
+        "vulnerabilityID": "CVE-2023-52425"
+      }
+    }
+  ],
+  "artifact": {
+    "id": "647da6a471c14b1e",
+    "name": "libexpat1",
+    "version": "2.5.0-1",
+    "type": "deb",
+    "locations": [
+      {
+        "path": "/usr/share/doc/libexpat1/copyright",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/info/libexpat1:amd64.md5sums",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/status",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      }
+    ],
+    "language": "",
+    "licenses": [
+      "MIT"
+    ],
+    "cpes": [
+      "cpe:2.3:a:libexpat1:libexpat1:2.5.0-1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libexpat1@2.5.0-1?arch=amd64&distro=debian-12&upstream=expat",
+    "upstreams": [
+      {
+        "name": "expat"
+      }
+    ]
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2024-37370",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-37370",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2024-37370"
+    ],
+    "description": "In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can modify the plaintext Extra Count field of a confidential GSS krb5 wrap token, causing the unwrapped token to appear truncated to the application.",
+    "cvss": [],
+    "fix": {
+      "versions": [
+        "1.20.1-2+deb12u2"
+      ],
+      "state": "fixed"
+    },
+    "advisories": [
+      {
+        "id": "DSA-5726-1",
+        "link": "https://security-tracker.debian.org/tracker/DSA-5726-1"
+      }
+    ]
+  },
+  "relatedVulnerabilities": [
+    {
+      "id": "CVE-2024-37370",
+      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-37370",
+      "namespace": "nvd:cpe",
+      "severity": "High",
+      "urls": [
+        "https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef",
+        "https://web.mit.edu/kerberos/www/advisories/"
+      ],
+      "description": "In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can modify the plaintext Extra Count field of a confidential GSS krb5 wrap token, causing the unwrapped token to appear truncated to the application.",
+      "cvss": [
+        {
+          "source": "nvd@nist.gov",
+          "type": "Primary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "metrics": {
+            "baseScore": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+          },
+          "vendorMetadata": {}
+        }
+      ]
+    }
+  ],
+  "matchDetails": [
+    {
+      "type": "exact-indirect-match",
+      "matcher": "dpkg-matcher",
+      "searchedBy": {
+        "distro": {
+          "type": "debian",
+          "version": "12"
+        },
+        "namespace": "debian:distro:debian:12",
+        "package": {
+          "name": "krb5",
+          "version": "1.20.1-2+deb12u1"
+        }
+      },
+      "found": {
+        "versionConstraint": "< 1.20.1-2+deb12u2 (deb)",
+        "vulnerabilityID": "CVE-2024-37370"
+      }
+    }
+  ],
+  "artifact": {
+    "id": "eb530b6c06324c23",
+    "name": "libgssapi-krb5-2",
+    "version": "1.20.1-2+deb12u1",
+    "type": "deb",
+    "locations": [
+      {
+        "path": "/usr/share/doc/libgssapi-krb5-2/copyright",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/info/libgssapi-krb5-2:amd64.md5sums",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/status",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      }
+    ],
+    "language": "",
+    "licenses": [
+      "GPL-2"
+    ],
+    "cpes": [
+      "cpe:2.3:a:libgssapi-krb5-2:libgssapi-krb5-2:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libgssapi-krb5-2:libgssapi_krb5_2:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libgssapi_krb5_2:libgssapi-krb5-2:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libgssapi_krb5_2:libgssapi_krb5_2:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libgssapi-krb5:libgssapi-krb5-2:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libgssapi-krb5:libgssapi_krb5_2:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libgssapi_krb5:libgssapi-krb5-2:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libgssapi_krb5:libgssapi_krb5_2:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libgssapi:libgssapi-krb5-2:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libgssapi:libgssapi_krb5_2:1.20.1-2+deb12u1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libgssapi-krb5-2@1.20.1-2%2Bdeb12u1?arch=amd64&distro=debian-12&upstream=krb5",
+    "upstreams": [
+      {
+        "name": "krb5"
+      }
+    ]
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2024-26461",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-26461",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2024-26461"
+    ],
+    "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+    "cvss": [],
+    "fix": {
+      "versions": [],
+      "state": "wont-fix"
+    },
+    "advisories": []
+  },
+  "relatedVulnerabilities": [
+    {
+      "id": "CVE-2024-26461",
+      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26461",
+      "namespace": "nvd:cpe",
+      "severity": "High",
+      "urls": [
+        "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md",
+        "https://security.netapp.com/advisory/ntap-20240415-0011/"
+      ],
+      "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+      "cvss": [
+        {
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "metrics": {
+            "baseScore": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+          },
+          "vendorMetadata": {}
+        }
+      ]
+    }
+  ],
+  "matchDetails": [
+    {
+      "type": "exact-indirect-match",
+      "matcher": "dpkg-matcher",
+      "searchedBy": {
+        "distro": {
+          "type": "debian",
+          "version": "12"
+        },
+        "namespace": "debian:distro:debian:12",
+        "package": {
+          "name": "krb5",
+          "version": "1.20.1-2+deb12u1"
+        }
+      },
+      "found": {
+        "versionConstraint": "none (deb)",
+        "vulnerabilityID": "CVE-2024-26461"
+      }
+    }
+  ],
+  "artifact": {
+    "id": "eb530b6c06324c23",
+    "name": "libgssapi-krb5-2",
+    "version": "1.20.1-2+deb12u1",
+    "type": "deb",
+    "locations": [
+      {
+        "path": "/usr/share/doc/libgssapi-krb5-2/copyright",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/info/libgssapi-krb5-2:amd64.md5sums",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/status",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      }
+    ],
+    "language": "",
+    "licenses": [
+      "GPL-2"
+    ],
+    "cpes": [
+      "cpe:2.3:a:libgssapi-krb5-2:libgssapi-krb5-2:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libgssapi-krb5-2:libgssapi_krb5_2:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libgssapi_krb5_2:libgssapi-krb5-2:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libgssapi_krb5_2:libgssapi_krb5_2:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libgssapi-krb5:libgssapi-krb5-2:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libgssapi-krb5:libgssapi_krb5_2:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libgssapi_krb5:libgssapi-krb5-2:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libgssapi_krb5:libgssapi_krb5_2:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libgssapi:libgssapi-krb5-2:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libgssapi:libgssapi_krb5_2:1.20.1-2+deb12u1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libgssapi-krb5-2@1.20.1-2%2Bdeb12u1?arch=amd64&distro=debian-12&upstream=krb5",
+    "upstreams": [
+      {
+        "name": "krb5"
+      }
+    ]
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2024-37370",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-37370",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2024-37370"
+    ],
+    "description": "In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can modify the plaintext Extra Count field of a confidential GSS krb5 wrap token, causing the unwrapped token to appear truncated to the application.",
+    "cvss": [],
+    "fix": {
+      "versions": [
+        "1.20.1-2+deb12u2"
+      ],
+      "state": "fixed"
+    },
+    "advisories": [
+      {
+        "id": "DSA-5726-1",
+        "link": "https://security-tracker.debian.org/tracker/DSA-5726-1"
+      }
+    ]
+  },
+  "relatedVulnerabilities": [
+    {
+      "id": "CVE-2024-37370",
+      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-37370",
+      "namespace": "nvd:cpe",
+      "severity": "High",
+      "urls": [
+        "https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef",
+        "https://web.mit.edu/kerberos/www/advisories/"
+      ],
+      "description": "In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can modify the plaintext Extra Count field of a confidential GSS krb5 wrap token, causing the unwrapped token to appear truncated to the application.",
+      "cvss": [
+        {
+          "source": "nvd@nist.gov",
+          "type": "Primary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "metrics": {
+            "baseScore": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+          },
+          "vendorMetadata": {}
+        }
+      ]
+    }
+  ],
+  "matchDetails": [
+    {
+      "type": "exact-indirect-match",
+      "matcher": "dpkg-matcher",
+      "searchedBy": {
+        "distro": {
+          "type": "debian",
+          "version": "12"
+        },
+        "namespace": "debian:distro:debian:12",
+        "package": {
+          "name": "krb5",
+          "version": "1.20.1-2+deb12u1"
+        }
+      },
+      "found": {
+        "versionConstraint": "< 1.20.1-2+deb12u2 (deb)",
+        "vulnerabilityID": "CVE-2024-37370"
+      }
+    }
+  ],
+  "artifact": {
+    "id": "a762d1301d128fa5",
+    "name": "libk5crypto3",
+    "version": "1.20.1-2+deb12u1",
+    "type": "deb",
+    "locations": [
+      {
+        "path": "/usr/share/doc/libk5crypto3/copyright",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/info/libk5crypto3:amd64.md5sums",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/status",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      }
+    ],
+    "language": "",
+    "licenses": [
+      "GPL-2"
+    ],
+    "cpes": [
+      "cpe:2.3:a:libk5crypto3:libk5crypto3:1.20.1-2+deb12u1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libk5crypto3@1.20.1-2%2Bdeb12u1?arch=amd64&distro=debian-12&upstream=krb5",
+    "upstreams": [
+      {
+        "name": "krb5"
+      }
+    ]
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2024-26461",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-26461",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2024-26461"
+    ],
+    "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+    "cvss": [],
+    "fix": {
+      "versions": [],
+      "state": "wont-fix"
+    },
+    "advisories": []
+  },
+  "relatedVulnerabilities": [
+    {
+      "id": "CVE-2024-26461",
+      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26461",
+      "namespace": "nvd:cpe",
+      "severity": "High",
+      "urls": [
+        "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md",
+        "https://security.netapp.com/advisory/ntap-20240415-0011/"
+      ],
+      "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+      "cvss": [
+        {
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "metrics": {
+            "baseScore": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+          },
+          "vendorMetadata": {}
+        }
+      ]
+    }
+  ],
+  "matchDetails": [
+    {
+      "type": "exact-indirect-match",
+      "matcher": "dpkg-matcher",
+      "searchedBy": {
+        "distro": {
+          "type": "debian",
+          "version": "12"
+        },
+        "namespace": "debian:distro:debian:12",
+        "package": {
+          "name": "krb5",
+          "version": "1.20.1-2+deb12u1"
+        }
+      },
+      "found": {
+        "versionConstraint": "none (deb)",
+        "vulnerabilityID": "CVE-2024-26461"
+      }
+    }
+  ],
+  "artifact": {
+    "id": "a762d1301d128fa5",
+    "name": "libk5crypto3",
+    "version": "1.20.1-2+deb12u1",
+    "type": "deb",
+    "locations": [
+      {
+        "path": "/usr/share/doc/libk5crypto3/copyright",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/info/libk5crypto3:amd64.md5sums",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/status",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      }
+    ],
+    "language": "",
+    "licenses": [
+      "GPL-2"
+    ],
+    "cpes": [
+      "cpe:2.3:a:libk5crypto3:libk5crypto3:1.20.1-2+deb12u1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libk5crypto3@1.20.1-2%2Bdeb12u1?arch=amd64&distro=debian-12&upstream=krb5",
+    "upstreams": [
+      {
+        "name": "krb5"
+      }
+    ]
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2024-37370",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-37370",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2024-37370"
+    ],
+    "description": "In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can modify the plaintext Extra Count field of a confidential GSS krb5 wrap token, causing the unwrapped token to appear truncated to the application.",
+    "cvss": [],
+    "fix": {
+      "versions": [
+        "1.20.1-2+deb12u2"
+      ],
+      "state": "fixed"
+    },
+    "advisories": [
+      {
+        "id": "DSA-5726-1",
+        "link": "https://security-tracker.debian.org/tracker/DSA-5726-1"
+      }
+    ]
+  },
+  "relatedVulnerabilities": [
+    {
+      "id": "CVE-2024-37370",
+      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-37370",
+      "namespace": "nvd:cpe",
+      "severity": "High",
+      "urls": [
+        "https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef",
+        "https://web.mit.edu/kerberos/www/advisories/"
+      ],
+      "description": "In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can modify the plaintext Extra Count field of a confidential GSS krb5 wrap token, causing the unwrapped token to appear truncated to the application.",
+      "cvss": [
+        {
+          "source": "nvd@nist.gov",
+          "type": "Primary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "metrics": {
+            "baseScore": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+          },
+          "vendorMetadata": {}
+        }
+      ]
+    }
+  ],
+  "matchDetails": [
+    {
+      "type": "exact-indirect-match",
+      "matcher": "dpkg-matcher",
+      "searchedBy": {
+        "distro": {
+          "type": "debian",
+          "version": "12"
+        },
+        "namespace": "debian:distro:debian:12",
+        "package": {
+          "name": "krb5",
+          "version": "1.20.1-2+deb12u1"
+        }
+      },
+      "found": {
+        "versionConstraint": "< 1.20.1-2+deb12u2 (deb)",
+        "vulnerabilityID": "CVE-2024-37370"
+      }
+    }
+  ],
+  "artifact": {
+    "id": "476c9c20e1e7fc90",
+    "name": "libkrb5-3",
+    "version": "1.20.1-2+deb12u1",
+    "type": "deb",
+    "locations": [
+      {
+        "path": "/usr/share/doc/libkrb5-3/copyright",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/info/libkrb5-3:amd64.md5sums",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/status",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      }
+    ],
+    "language": "",
+    "licenses": [
+      "GPL-2"
+    ],
+    "cpes": [
+      "cpe:2.3:a:libkrb5-3:libkrb5-3:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libkrb5-3:libkrb5_3:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libkrb5_3:libkrb5-3:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libkrb5_3:libkrb5_3:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libkrb5:libkrb5-3:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libkrb5:libkrb5_3:1.20.1-2+deb12u1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libkrb5-3@1.20.1-2%2Bdeb12u1?arch=amd64&distro=debian-12&upstream=krb5",
+    "upstreams": [
+      {
+        "name": "krb5"
+      }
+    ]
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2024-26461",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-26461",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2024-26461"
+    ],
+    "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+    "cvss": [],
+    "fix": {
+      "versions": [],
+      "state": "wont-fix"
+    },
+    "advisories": []
+  },
+  "relatedVulnerabilities": [
+    {
+      "id": "CVE-2024-26461",
+      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26461",
+      "namespace": "nvd:cpe",
+      "severity": "High",
+      "urls": [
+        "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md",
+        "https://security.netapp.com/advisory/ntap-20240415-0011/"
+      ],
+      "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+      "cvss": [
+        {
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "metrics": {
+            "baseScore": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+          },
+          "vendorMetadata": {}
+        }
+      ]
+    }
+  ],
+  "matchDetails": [
+    {
+      "type": "exact-indirect-match",
+      "matcher": "dpkg-matcher",
+      "searchedBy": {
+        "distro": {
+          "type": "debian",
+          "version": "12"
+        },
+        "namespace": "debian:distro:debian:12",
+        "package": {
+          "name": "krb5",
+          "version": "1.20.1-2+deb12u1"
+        }
+      },
+      "found": {
+        "versionConstraint": "none (deb)",
+        "vulnerabilityID": "CVE-2024-26461"
+      }
+    }
+  ],
+  "artifact": {
+    "id": "476c9c20e1e7fc90",
+    "name": "libkrb5-3",
+    "version": "1.20.1-2+deb12u1",
+    "type": "deb",
+    "locations": [
+      {
+        "path": "/usr/share/doc/libkrb5-3/copyright",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/info/libkrb5-3:amd64.md5sums",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/status",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      }
+    ],
+    "language": "",
+    "licenses": [
+      "GPL-2"
+    ],
+    "cpes": [
+      "cpe:2.3:a:libkrb5-3:libkrb5-3:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libkrb5-3:libkrb5_3:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libkrb5_3:libkrb5-3:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libkrb5_3:libkrb5_3:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libkrb5:libkrb5-3:1.20.1-2+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libkrb5:libkrb5_3:1.20.1-2+deb12u1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libkrb5-3@1.20.1-2%2Bdeb12u1?arch=amd64&distro=debian-12&upstream=krb5",
+    "upstreams": [
+      {
+        "name": "krb5"
+      }
+    ]
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2024-37370",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-37370",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2024-37370"
+    ],
+    "description": "In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can modify the plaintext Extra Count field of a confidential GSS krb5 wrap token, causing the unwrapped token to appear truncated to the application.",
+    "cvss": [],
+    "fix": {
+      "versions": [
+        "1.20.1-2+deb12u2"
+      ],
+      "state": "fixed"
+    },
+    "advisories": [
+      {
+        "id": "DSA-5726-1",
+        "link": "https://security-tracker.debian.org/tracker/DSA-5726-1"
+      }
+    ]
+  },
+  "relatedVulnerabilities": [
+    {
+      "id": "CVE-2024-37370",
+      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-37370",
+      "namespace": "nvd:cpe",
+      "severity": "High",
+      "urls": [
+        "https://github.com/krb5/krb5/commit/55fbf435edbe2e92dd8101669b1ce7144bc96fef",
+        "https://web.mit.edu/kerberos/www/advisories/"
+      ],
+      "description": "In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can modify the plaintext Extra Count field of a confidential GSS krb5 wrap token, causing the unwrapped token to appear truncated to the application.",
+      "cvss": [
+        {
+          "source": "nvd@nist.gov",
+          "type": "Primary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "metrics": {
+            "baseScore": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+          },
+          "vendorMetadata": {}
+        }
+      ]
+    }
+  ],
+  "matchDetails": [
+    {
+      "type": "exact-indirect-match",
+      "matcher": "dpkg-matcher",
+      "searchedBy": {
+        "distro": {
+          "type": "debian",
+          "version": "12"
+        },
+        "namespace": "debian:distro:debian:12",
+        "package": {
+          "name": "krb5",
+          "version": "1.20.1-2+deb12u1"
+        }
+      },
+      "found": {
+        "versionConstraint": "< 1.20.1-2+deb12u2 (deb)",
+        "vulnerabilityID": "CVE-2024-37370"
+      }
+    }
+  ],
+  "artifact": {
+    "id": "e9edcdc78a2b088b",
+    "name": "libkrb5support0",
+    "version": "1.20.1-2+deb12u1",
+    "type": "deb",
+    "locations": [
+      {
+        "path": "/usr/share/doc/libkrb5support0/copyright",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/info/libkrb5support0:amd64.md5sums",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/status",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      }
+    ],
+    "language": "",
+    "licenses": [
+      "GPL-2"
+    ],
+    "cpes": [
+      "cpe:2.3:a:libkrb5support0:libkrb5support0:1.20.1-2+deb12u1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libkrb5support0@1.20.1-2%2Bdeb12u1?arch=amd64&distro=debian-12&upstream=krb5",
+    "upstreams": [
+      {
+        "name": "krb5"
+      }
+    ]
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2024-26461",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-26461",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2024-26461"
+    ],
+    "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+    "cvss": [],
+    "fix": {
+      "versions": [],
+      "state": "wont-fix"
+    },
+    "advisories": []
+  },
+  "relatedVulnerabilities": [
+    {
+      "id": "CVE-2024-26461",
+      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-26461",
+      "namespace": "nvd:cpe",
+      "severity": "High",
+      "urls": [
+        "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md",
+        "https://security.netapp.com/advisory/ntap-20240415-0011/"
+      ],
+      "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c.",
+      "cvss": [
+        {
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "metrics": {
+            "baseScore": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+          },
+          "vendorMetadata": {}
+        }
+      ]
+    }
+  ],
+  "matchDetails": [
+    {
+      "type": "exact-indirect-match",
+      "matcher": "dpkg-matcher",
+      "searchedBy": {
+        "distro": {
+          "type": "debian",
+          "version": "12"
+        },
+        "namespace": "debian:distro:debian:12",
+        "package": {
+          "name": "krb5",
+          "version": "1.20.1-2+deb12u1"
+        }
+      },
+      "found": {
+        "versionConstraint": "none (deb)",
+        "vulnerabilityID": "CVE-2024-26461"
+      }
+    }
+  ],
+  "artifact": {
+    "id": "e9edcdc78a2b088b",
+    "name": "libkrb5support0",
+    "version": "1.20.1-2+deb12u1",
+    "type": "deb",
+    "locations": [
+      {
+        "path": "/usr/share/doc/libkrb5support0/copyright",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/info/libkrb5support0:amd64.md5sums",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/status",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      }
+    ],
+    "language": "",
+    "licenses": [
+      "GPL-2"
+    ],
+    "cpes": [
+      "cpe:2.3:a:libkrb5support0:libkrb5support0:1.20.1-2+deb12u1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libkrb5support0@1.20.1-2%2Bdeb12u1?arch=amd64&distro=debian-12&upstream=krb5",
+    "upstreams": [
+      {
+        "name": "krb5"
+      }
+    ]
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2023-2953",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-2953",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2023-2953"
+    ],
+    "description": "A vulnerability was found in openldap. This security flaw causes a null pointer dereference in ber_memalloc_x() function.",
+    "cvss": [],
+    "fix": {
+      "versions": [],
+      "state": "wont-fix"
+    },
+    "advisories": []
+  },
+  "relatedVulnerabilities": [
+    {
+      "id": "CVE-2023-2953",
+      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-2953",
+      "namespace": "nvd:cpe",
+      "severity": "High",
+      "urls": [
+        "http://seclists.org/fulldisclosure/2023/Jul/47",
+        "http://seclists.org/fulldisclosure/2023/Jul/48",
+        "http://seclists.org/fulldisclosure/2023/Jul/52",
+        "https://access.redhat.com/security/cve/CVE-2023-2953",
+        "https://bugs.openldap.org/show_bug.cgi?id=9904",
+        "https://security.netapp.com/advisory/ntap-20230703-0005/",
+        "https://support.apple.com/kb/HT213843",
+        "https://support.apple.com/kb/HT213844",
+        "https://support.apple.com/kb/HT213845"
+      ],
+      "description": "A vulnerability was found in openldap. This security flaw causes a null pointer dereference in ber_memalloc_x() function.",
+      "cvss": [
+        {
+          "source": "nvd@nist.gov",
+          "type": "Primary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "metrics": {
+            "baseScore": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+          },
+          "vendorMetadata": {}
+        }
+      ]
+    }
+  ],
+  "matchDetails": [
+    {
+      "type": "exact-indirect-match",
+      "matcher": "dpkg-matcher",
+      "searchedBy": {
+        "distro": {
+          "type": "debian",
+          "version": "12"
+        },
+        "namespace": "debian:distro:debian:12",
+        "package": {
+          "name": "openldap",
+          "version": "2.5.13+dfsg-5"
+        }
+      },
+      "found": {
+        "versionConstraint": "none (deb)",
+        "vulnerabilityID": "CVE-2023-2953"
+      }
+    }
+  ],
+  "artifact": {
+    "id": "ed26cdfa87149cfa",
+    "name": "libldap-2.5-0",
+    "version": "2.5.13+dfsg-5",
+    "type": "deb",
+    "locations": [
+      {
+        "path": "/usr/share/doc/libldap-2.5-0/copyright",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      },
+      {
+        "path": "/var/lib/dpkg/info/libldap-2.5-0:amd64.md5sums",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      },
+      {
+        "path": "/var/lib/dpkg/status",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      }
+    ],
+    "language": "",
+    "licenses": [
+      "BSD-3-clause",
+      "BSD-3-clause-California",
+      "BSD-3-clause-variant",
+      "BSD-4-clause-California",
+      "Beerware",
+      "Expat",
+      "Expat-ISC",
+      "Expat-UNM",
+      "F5",
+      "FSF-unlimited",
+      "GPL-2",
+      "GPL-2+",
+      "GPL-3",
+      "GPL-3+",
+      "JCG",
+      "MIT-XC",
+      "NeoSoft-permissive",
+      "OpenLDAP-2.8",
+      "UMich",
+      "public-domain"
+    ],
+    "cpes": [
+      "cpe:2.3:a:libldap-2.5-0:libldap-2.5-0:2.5.13+dfsg-5:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libldap-2.5-0:libldap_2.5_0:2.5.13+dfsg-5:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libldap_2.5_0:libldap-2.5-0:2.5.13+dfsg-5:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libldap_2.5_0:libldap_2.5_0:2.5.13+dfsg-5:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libldap-2.5:libldap-2.5-0:2.5.13+dfsg-5:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libldap-2.5:libldap_2.5_0:2.5.13+dfsg-5:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libldap_2.5:libldap-2.5-0:2.5.13+dfsg-5:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libldap_2.5:libldap_2.5_0:2.5.13+dfsg-5:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libldap:libldap-2.5-0:2.5.13+dfsg-5:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libldap:libldap_2.5_0:2.5.13+dfsg-5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libldap-2.5-0@2.5.13%2Bdfsg-5?arch=amd64&distro=debian-12&upstream=openldap",
+    "upstreams": [
+      {
+        "name": "openldap"
+      }
+    ]
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2023-2953",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-2953",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2023-2953"
+    ],
+    "description": "A vulnerability was found in openldap. This security flaw causes a null pointer dereference in ber_memalloc_x() function.",
+    "cvss": [],
+    "fix": {
+      "versions": [],
+      "state": "wont-fix"
+    },
+    "advisories": []
+  },
+  "relatedVulnerabilities": [
+    {
+      "id": "CVE-2023-2953",
+      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-2953",
+      "namespace": "nvd:cpe",
+      "severity": "High",
+      "urls": [
+        "http://seclists.org/fulldisclosure/2023/Jul/47",
+        "http://seclists.org/fulldisclosure/2023/Jul/48",
+        "http://seclists.org/fulldisclosure/2023/Jul/52",
+        "https://access.redhat.com/security/cve/CVE-2023-2953",
+        "https://bugs.openldap.org/show_bug.cgi?id=9904",
+        "https://security.netapp.com/advisory/ntap-20230703-0005/",
+        "https://support.apple.com/kb/HT213843",
+        "https://support.apple.com/kb/HT213844",
+        "https://support.apple.com/kb/HT213845"
+      ],
+      "description": "A vulnerability was found in openldap. This security flaw causes a null pointer dereference in ber_memalloc_x() function.",
+      "cvss": [
+        {
+          "source": "nvd@nist.gov",
+          "type": "Primary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "metrics": {
+            "baseScore": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+          },
+          "vendorMetadata": {}
+        }
+      ]
+    }
+  ],
+  "matchDetails": [
+    {
+      "type": "exact-indirect-match",
+      "matcher": "dpkg-matcher",
+      "searchedBy": {
+        "distro": {
+          "type": "debian",
+          "version": "12"
+        },
+        "namespace": "debian:distro:debian:12",
+        "package": {
+          "name": "openldap",
+          "version": "2.5.13+dfsg-5"
+        }
+      },
+      "found": {
+        "versionConstraint": "none (deb)",
+        "vulnerabilityID": "CVE-2023-2953"
+      }
+    }
+  ],
+  "artifact": {
+    "id": "72893c643e1a6bdf",
+    "name": "libldap-common",
+    "version": "2.5.13+dfsg-5",
+    "type": "deb",
+    "locations": [
+      {
+        "path": "/usr/share/doc/libldap-common/copyright",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      },
+      {
+        "path": "/var/lib/dpkg/info/libldap-common.conffiles",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      },
+      {
+        "path": "/var/lib/dpkg/info/libldap-common.list",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      },
+      {
+        "path": "/var/lib/dpkg/info/libldap-common.md5sums",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      },
+      {
+        "path": "/var/lib/dpkg/status",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      }
+    ],
+    "language": "",
+    "licenses": [
+      "BSD-3-clause",
+      "BSD-3-clause-California",
+      "BSD-3-clause-variant",
+      "BSD-4-clause-California",
+      "Beerware",
+      "Expat",
+      "Expat-ISC",
+      "Expat-UNM",
+      "F5",
+      "FSF-unlimited",
+      "GPL-2",
+      "GPL-2+",
+      "GPL-3",
+      "GPL-3+",
+      "JCG",
+      "MIT-XC",
+      "NeoSoft-permissive",
+      "OpenLDAP-2.8",
+      "UMich",
+      "public-domain"
+    ],
+    "cpes": [
+      "cpe:2.3:a:libldap-common:libldap-common:2.5.13+dfsg-5:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libldap-common:libldap_common:2.5.13+dfsg-5:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libldap_common:libldap-common:2.5.13+dfsg-5:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libldap_common:libldap_common:2.5.13+dfsg-5:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libldap:libldap-common:2.5.13+dfsg-5:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libldap:libldap_common:2.5.13+dfsg-5:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libldap-common@2.5.13%2Bdfsg-5?arch=all&distro=debian-12&upstream=openldap",
+    "upstreams": [
+      {
+        "name": "openldap"
+      }
+    ]
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2023-7104",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-7104",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2023-7104"
+    ],
+    "description": "A vulnerability was found in SQLite SQLite3 up to 3.43.0 and classified as critical. This issue affects the function sessionReadRecord of the file ext/session/sqlite3session.c of the component make alltest Handler. The manipulation leads to heap-based buffer overflow. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-248999.",
+    "cvss": [],
+    "fix": {
+      "versions": [],
+      "state": "wont-fix"
+    },
+    "advisories": []
+  },
+  "relatedVulnerabilities": [
+    {
+      "id": "CVE-2023-7104",
+      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-7104",
+      "namespace": "nvd:cpe",
+      "severity": "High",
+      "urls": [
+        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AYONA2XSNFMXLAW4IHLFI5UVV3QRNG5K/",
+        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/D6C2HN4T2S6GYNTAUXLH45LQZHK7QPHP/",
+        "https://security.netapp.com/advisory/ntap-20240112-0008/",
+        "https://sqlite.org/forum/forumpost/5bcbf4571c",
+        "https://sqlite.org/src/info/0e4e7a05c4204b47",
+        "https://vuldb.com/?ctiid.248999",
+        "https://vuldb.com/?id.248999"
+      ],
+      "description": "A vulnerability was found in SQLite SQLite3 up to 3.43.0 and classified as critical. This issue affects the function sessionReadRecord of the file ext/session/sqlite3session.c of the component make alltest Handler. The manipulation leads to heap-based buffer overflow. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-248999.",
+      "cvss": [
+        {
+          "source": "cna@vuldb.com",
+          "type": "Secondary",
+          "version": "2.0",
+          "vector": "AV:A/AC:L/Au:S/C:P/I:P/A:P",
+          "metrics": {
+            "baseScore": 5.2,
+            "exploitabilityScore": 5.1,
+            "impactScore": 6.4
+          },
+          "vendorMetadata": {}
+        },
+        {
+          "source": "nvd@nist.gov",
+          "type": "Primary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+          "metrics": {
+            "baseScore": 7.3,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.4
+          },
+          "vendorMetadata": {}
+        },
+        {
+          "source": "cna@vuldb.com",
+          "type": "Secondary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+          "metrics": {
+            "baseScore": 5.5,
+            "exploitabilityScore": 2.1,
+            "impactScore": 3.4
+          },
+          "vendorMetadata": {}
+        }
+      ]
+    }
+  ],
+  "matchDetails": [
+    {
+      "type": "exact-indirect-match",
+      "matcher": "dpkg-matcher",
+      "searchedBy": {
+        "distro": {
+          "type": "debian",
+          "version": "12"
+        },
+        "namespace": "debian:distro:debian:12",
+        "package": {
+          "name": "sqlite3",
+          "version": "3.40.1-2"
+        }
+      },
+      "found": {
+        "versionConstraint": "none (deb)",
+        "vulnerabilityID": "CVE-2023-7104"
+      }
+    }
+  ],
+  "artifact": {
+    "id": "d3ca818e62b6ef39",
+    "name": "libsqlite3-0",
+    "version": "3.40.1-2",
+    "type": "deb",
+    "locations": [
+      {
+        "path": "/usr/share/doc/libsqlite3-0/copyright",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/info/libsqlite3-0:amd64.md5sums",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/status",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      }
+    ],
+    "language": "",
+    "licenses": [
+      "GPL-2",
+      "GPL-2+",
+      "public-domain"
+    ],
+    "cpes": [
+      "cpe:2.3:a:libsqlite3-0:libsqlite3-0:3.40.1-2:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libsqlite3-0:libsqlite3_0:3.40.1-2:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libsqlite3_0:libsqlite3-0:3.40.1-2:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libsqlite3_0:libsqlite3_0:3.40.1-2:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libsqlite3:libsqlite3-0:3.40.1-2:*:*:*:*:*:*:*",
+      "cpe:2.3:a:libsqlite3:libsqlite3_0:3.40.1-2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libsqlite3-0@3.40.1-2?arch=amd64&distro=debian-12&upstream=sqlite3",
+    "upstreams": [
+      {
+        "name": "sqlite3"
+      }
+    ]
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2024-6119",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-6119",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2024-6119"
+    ],
+    "description": "Issue summary: Applications performing certificate name checks (e.g., TLS clients checking server certificates) may attempt to read an invalid memory address resulting in abnormal termination of the application process.  Impact summary: Abnormal termination of an application can a cause a denial of service.  Applications performing certificate name checks (e.g., TLS clients checking server certificates) may attempt to read an invalid memory address when comparing the expected name with an `otherName` subject alternative name of an X.509 certificate. This may result in an exception that terminates the application program.  Note that basic certificate chain validation (signatures, dates, ...) is not affected, the denial of service can occur only when the application also specifies an expected DNS name, Email address or IP address.  TLS servers rarely solicit client certificates, and even when they do, they generally don't perform a name check against a reference identifier (expected identity), but rather extract the presented identity after checking the certificate chain.  So TLS servers are generally not affected and the severity of the issue is Moderate.  The FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
+    "cvss": [],
+    "fix": {
+      "versions": [
+        "3.0.14-1~deb12u2"
+      ],
+      "state": "fixed"
+    },
+    "advisories": [
+      {
+        "id": "DSA-5764-1",
+        "link": "https://security-tracker.debian.org/tracker/DSA-5764-1"
+      }
+    ]
+  },
+  "relatedVulnerabilities": [
+    {
+      "id": "CVE-2024-6119",
+      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-6119",
+      "namespace": "nvd:cpe",
+      "severity": "High",
+      "urls": [
+        "https://github.com/openssl/openssl/commit/05f360d9e849a1b277db628f1f13083a7f8dd04f",
+        "https://github.com/openssl/openssl/commit/06d1dc3fa96a2ba5a3e22735a033012aadc9f0d6",
+        "https://github.com/openssl/openssl/commit/621f3729831b05ee828a3203eddb621d014ff2b2",
+        "https://github.com/openssl/openssl/commit/7dfcee2cd2a63b2c64b9b4b0850be64cb695b0a0",
+        "https://openssl-library.org/news/secadv/20240903.txt"
+      ],
+      "description": "Issue summary: Applications performing certificate name checks (e.g., TLS\nclients checking server certificates) may attempt to read an invalid memory\naddress resulting in abnormal termination of the application process.\n\nImpact summary: Abnormal termination of an application can a cause a denial of\nservice.\n\nApplications performing certificate name checks (e.g., TLS clients checking\nserver certificates) may attempt to read an invalid memory address when\ncomparing the expected name with an `otherName` subject alternative name of an\nX.509 certificate. This may result in an exception that terminates the\napplication program.\n\nNote that basic certificate chain validation (signatures, dates, ...) is not\naffected, the denial of service can occur only when the application also\nspecifies an expected DNS name, Email address or IP address.\n\nTLS servers rarely solicit client certificates, and even when they do, they\ngenerally don't perform a name check against a reference identifier (expected\nidentity), but rather extract the presented identity after checking the\ncertificate chain.  So TLS servers are generally not affected and the severity\nof the issue is Moderate.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
+      "cvss": [
+        {
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "metrics": {
+            "baseScore": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+          },
+          "vendorMetadata": {}
+        }
+      ]
+    }
+  ],
+  "matchDetails": [
+    {
+      "type": "exact-indirect-match",
+      "matcher": "dpkg-matcher",
+      "searchedBy": {
+        "distro": {
+          "type": "debian",
+          "version": "12"
+        },
+        "namespace": "debian:distro:debian:12",
+        "package": {
+          "name": "openssl",
+          "version": "3.0.11-1~deb12u2"
+        }
+      },
+      "found": {
+        "versionConstraint": "< 3.0.14-1~deb12u2 (deb)",
+        "vulnerabilityID": "CVE-2024-6119"
+      }
+    }
+  ],
+  "artifact": {
+    "id": "f4f6c7a5773f97fe",
+    "name": "libssl3",
+    "version": "3.0.11-1~deb12u2",
+    "type": "deb",
+    "locations": [
+      {
+        "path": "/usr/share/doc/libssl3/copyright",
+        "layerID": "sha256:071988c3d0aee6316ed29e8848ddaaa8efed1fb239ba9eedf8df557122fd7d5e"
+      },
+      {
+        "path": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
+        "layerID": "sha256:071988c3d0aee6316ed29e8848ddaaa8efed1fb239ba9eedf8df557122fd7d5e"
+      },
+      {
+        "path": "/var/lib/dpkg/status",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      }
+    ],
+    "language": "",
+    "licenses": [
+      "Apache-2.0",
+      "Artistic",
+      "GPL-1",
+      "GPL-1+"
+    ],
+    "cpes": [
+      "cpe:2.3:a:libssl3:libssl3:3.0.11-1~deb12u2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libssl3@3.0.11-1~deb12u2?arch=amd64&distro=debian-12&upstream=openssl",
+    "upstreams": [
+      {
+        "name": "openssl"
+      }
+    ]
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2023-50387",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-50387",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2023-50387"
+    ],
+    "description": "Certain DNSSEC aspects of the DNS protocol (in RFC 4033, 4034, 4035, 6840, and related RFCs) allow remote attackers to cause a denial of service (CPU consumption) via one or more DNSSEC responses, aka the \"KeyTrap\" issue. One of the concerns is that, when there is a zone with many DNSKEY and RRSIG records, the protocol specification implies that an algorithm must evaluate all combinations of DNSKEY and RRSIG records.",
+    "cvss": [],
+    "fix": {
+      "versions": [
+        "252.23-1~deb12u1"
+      ],
+      "state": "fixed"
+    },
+    "advisories": []
+  },
+  "relatedVulnerabilities": [
+    {
+      "id": "CVE-2023-50387",
+      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-50387",
+      "namespace": "nvd:cpe",
+      "severity": "High",
+      "urls": [
+        "http://www.openwall.com/lists/oss-security/2024/02/16/2",
+        "http://www.openwall.com/lists/oss-security/2024/02/16/3",
+        "https://access.redhat.com/security/cve/CVE-2023-50387",
+        "https://bugzilla.suse.com/show_bug.cgi?id=1219823",
+        "https://docs.powerdns.com/recursor/security-advisories/powerdns-advisory-2024-01.html",
+        "https://gitlab.nic.cz/knot/knot-resolver/-/releases/v5.7.1",
+        "https://kb.isc.org/docs/cve-2023-50387",
+        "https://lists.debian.org/debian-lts-announce/2024/02/msg00006.html",
+        "https://lists.debian.org/debian-lts-announce/2024/05/msg00011.html",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/6FV5O347JTX7P5OZA6NGO4MKTXRXMKOZ/",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/BUIP7T7Z4T3UHLXFWG6XIVDP4GYPD3AI/",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/HVRDSJVZKMCXKKPP6PNR62T7RWZ3YSDZ/",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/IGSLGKUAQTW5JPPZCMF5YPEYALLRUZZ6/",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PNNHZSZPG2E7NBMBNYPGHCFI4V4XRWNQ/",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/RGS7JN6FZXUSTC2XKQHH27574XOULYYJ/",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/SVYA42BLXUCIDLD35YIJPJSHDIADNYMP/",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/TEXGOYGW7DBS3N2QSSQONZ4ENIRQEAPG/",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/UQESRWMJCF4JEYJEAKLRM6CT55GLJAB7/",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ZDZFMEKQTZ4L7RY46FCENWFB5MDT263R/",
+        "https://lists.thekelleys.org.uk/pipermail/dnsmasq-discuss/2024q1/017430.html",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-50387",
+        "https://news.ycombinator.com/item?id=39367411",
+        "https://news.ycombinator.com/item?id=39372384",
+        "https://nlnetlabs.nl/news/2024/Feb/13/unbound-1.19.1-released/",
+        "https://security.netapp.com/advisory/ntap-20240307-0007/",
+        "https://www.athene-center.de/aktuelles/key-trap",
+        "https://www.athene-center.de/fileadmin/content/PDF/Technical_Report_KeyTrap.pdf",
+        "https://www.isc.org/blogs/2024-bind-security-release/",
+        "https://www.securityweek.com/keytrap-dns-attack-could-disable-large-parts-of-internet-researchers/",
+        "https://www.theregister.com/2024/02/13/dnssec_vulnerability_internet/"
+      ],
+      "description": "Certain DNSSEC aspects of the DNS protocol (in RFC 4033, 4034, 4035, 6840, and related RFCs) allow remote attackers to cause a denial of service (CPU consumption) via one or more DNSSEC responses, aka the \"KeyTrap\" issue. One of the concerns is that, when there is a zone with many DNSKEY and RRSIG records, the protocol specification implies that an algorithm must evaluate all combinations of DNSKEY and RRSIG records.",
+      "cvss": [
+        {
+          "source": "nvd@nist.gov",
+          "type": "Primary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "metrics": {
+            "baseScore": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+          },
+          "vendorMetadata": {}
+        }
+      ]
+    }
+  ],
+  "matchDetails": [
+    {
+      "type": "exact-indirect-match",
+      "matcher": "dpkg-matcher",
+      "searchedBy": {
+        "distro": {
+          "type": "debian",
+          "version": "12"
+        },
+        "namespace": "debian:distro:debian:12",
+        "package": {
+          "name": "systemd",
+          "version": "252.22-1~deb12u1"
+        }
+      },
+      "found": {
+        "versionConstraint": "< 252.23-1~deb12u1 (deb)",
+        "vulnerabilityID": "CVE-2023-50387"
+      }
+    }
+  ],
+  "artifact": {
+    "id": "eec74e7c5122eb22",
+    "name": "libsystemd0",
+    "version": "252.22-1~deb12u1",
+    "type": "deb",
+    "locations": [
+      {
+        "path": "/usr/share/doc/libsystemd0/copyright",
+        "layerID": "sha256:5d4427064ecc46e3c2add169e9b5eafc7ed2be7861081ec925938ab628ac0e25"
+      },
+      {
+        "path": "/var/lib/dpkg/info/libsystemd0:amd64.md5sums",
+        "layerID": "sha256:5d4427064ecc46e3c2add169e9b5eafc7ed2be7861081ec925938ab628ac0e25"
+      },
+      {
+        "path": "/var/lib/dpkg/status",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      }
+    ],
+    "language": "",
+    "licenses": [
+      "CC0-1.0",
+      "Expat",
+      "GPL-2",
+      "GPL-2+",
+      "LGPL-2.1",
+      "LGPL-2.1+",
+      "public-domain"
+    ],
+    "cpes": [
+      "cpe:2.3:a:libsystemd0:libsystemd0:252.22-1~deb12u1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libsystemd0@252.22-1~deb12u1?arch=amd64&distro=debian-12&upstream=systemd",
+    "upstreams": [
+      {
+        "name": "systemd"
+      }
+    ]
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2023-50387",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-50387",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2023-50387"
+    ],
+    "description": "Certain DNSSEC aspects of the DNS protocol (in RFC 4033, 4034, 4035, 6840, and related RFCs) allow remote attackers to cause a denial of service (CPU consumption) via one or more DNSSEC responses, aka the \"KeyTrap\" issue. One of the concerns is that, when there is a zone with many DNSKEY and RRSIG records, the protocol specification implies that an algorithm must evaluate all combinations of DNSKEY and RRSIG records.",
+    "cvss": [],
+    "fix": {
+      "versions": [
+        "252.23-1~deb12u1"
+      ],
+      "state": "fixed"
+    },
+    "advisories": []
+  },
+  "relatedVulnerabilities": [
+    {
+      "id": "CVE-2023-50387",
+      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-50387",
+      "namespace": "nvd:cpe",
+      "severity": "High",
+      "urls": [
+        "http://www.openwall.com/lists/oss-security/2024/02/16/2",
+        "http://www.openwall.com/lists/oss-security/2024/02/16/3",
+        "https://access.redhat.com/security/cve/CVE-2023-50387",
+        "https://bugzilla.suse.com/show_bug.cgi?id=1219823",
+        "https://docs.powerdns.com/recursor/security-advisories/powerdns-advisory-2024-01.html",
+        "https://gitlab.nic.cz/knot/knot-resolver/-/releases/v5.7.1",
+        "https://kb.isc.org/docs/cve-2023-50387",
+        "https://lists.debian.org/debian-lts-announce/2024/02/msg00006.html",
+        "https://lists.debian.org/debian-lts-announce/2024/05/msg00011.html",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/6FV5O347JTX7P5OZA6NGO4MKTXRXMKOZ/",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/BUIP7T7Z4T3UHLXFWG6XIVDP4GYPD3AI/",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/HVRDSJVZKMCXKKPP6PNR62T7RWZ3YSDZ/",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/IGSLGKUAQTW5JPPZCMF5YPEYALLRUZZ6/",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/PNNHZSZPG2E7NBMBNYPGHCFI4V4XRWNQ/",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/RGS7JN6FZXUSTC2XKQHH27574XOULYYJ/",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/SVYA42BLXUCIDLD35YIJPJSHDIADNYMP/",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/TEXGOYGW7DBS3N2QSSQONZ4ENIRQEAPG/",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/UQESRWMJCF4JEYJEAKLRM6CT55GLJAB7/",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/ZDZFMEKQTZ4L7RY46FCENWFB5MDT263R/",
+        "https://lists.thekelleys.org.uk/pipermail/dnsmasq-discuss/2024q1/017430.html",
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-50387",
+        "https://news.ycombinator.com/item?id=39367411",
+        "https://news.ycombinator.com/item?id=39372384",
+        "https://nlnetlabs.nl/news/2024/Feb/13/unbound-1.19.1-released/",
+        "https://security.netapp.com/advisory/ntap-20240307-0007/",
+        "https://www.athene-center.de/aktuelles/key-trap",
+        "https://www.athene-center.de/fileadmin/content/PDF/Technical_Report_KeyTrap.pdf",
+        "https://www.isc.org/blogs/2024-bind-security-release/",
+        "https://www.securityweek.com/keytrap-dns-attack-could-disable-large-parts-of-internet-researchers/",
+        "https://www.theregister.com/2024/02/13/dnssec_vulnerability_internet/"
+      ],
+      "description": "Certain DNSSEC aspects of the DNS protocol (in RFC 4033, 4034, 4035, 6840, and related RFCs) allow remote attackers to cause a denial of service (CPU consumption) via one or more DNSSEC responses, aka the \"KeyTrap\" issue. One of the concerns is that, when there is a zone with many DNSKEY and RRSIG records, the protocol specification implies that an algorithm must evaluate all combinations of DNSKEY and RRSIG records.",
+      "cvss": [
+        {
+          "source": "nvd@nist.gov",
+          "type": "Primary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "metrics": {
+            "baseScore": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+          },
+          "vendorMetadata": {}
+        }
+      ]
+    }
+  ],
+  "matchDetails": [
+    {
+      "type": "exact-indirect-match",
+      "matcher": "dpkg-matcher",
+      "searchedBy": {
+        "distro": {
+          "type": "debian",
+          "version": "12"
+        },
+        "namespace": "debian:distro:debian:12",
+        "package": {
+          "name": "systemd",
+          "version": "252.22-1~deb12u1"
+        }
+      },
+      "found": {
+        "versionConstraint": "< 252.23-1~deb12u1 (deb)",
+        "vulnerabilityID": "CVE-2023-50387"
+      }
+    }
+  ],
+  "artifact": {
+    "id": "149f02d90873ce5b",
+    "name": "libudev1",
+    "version": "252.22-1~deb12u1",
+    "type": "deb",
+    "locations": [
+      {
+        "path": "/usr/share/doc/libudev1/copyright",
+        "layerID": "sha256:5d4427064ecc46e3c2add169e9b5eafc7ed2be7861081ec925938ab628ac0e25"
+      },
+      {
+        "path": "/var/lib/dpkg/info/libudev1:amd64.md5sums",
+        "layerID": "sha256:5d4427064ecc46e3c2add169e9b5eafc7ed2be7861081ec925938ab628ac0e25"
+      },
+      {
+        "path": "/var/lib/dpkg/status",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      }
+    ],
+    "language": "",
+    "licenses": [
+      "CC0-1.0",
+      "Expat",
+      "GPL-2",
+      "GPL-2+",
+      "LGPL-2.1",
+      "LGPL-2.1+",
+      "public-domain"
+    ],
+    "cpes": [
+      "cpe:2.3:a:libudev1:libudev1:252.22-1~deb12u1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/libudev1@252.22-1~deb12u1?arch=amd64&distro=debian-12&upstream=systemd",
+    "upstreams": [
+      {
+        "name": "systemd"
+      }
+    ]
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2024-6119",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2024-6119",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2024-6119"
+    ],
+    "description": "Issue summary: Applications performing certificate name checks (e.g., TLS clients checking server certificates) may attempt to read an invalid memory address resulting in abnormal termination of the application process.  Impact summary: Abnormal termination of an application can a cause a denial of service.  Applications performing certificate name checks (e.g., TLS clients checking server certificates) may attempt to read an invalid memory address when comparing the expected name with an `otherName` subject alternative name of an X.509 certificate. This may result in an exception that terminates the application program.  Note that basic certificate chain validation (signatures, dates, ...) is not affected, the denial of service can occur only when the application also specifies an expected DNS name, Email address or IP address.  TLS servers rarely solicit client certificates, and even when they do, they generally don't perform a name check against a reference identifier (expected identity), but rather extract the presented identity after checking the certificate chain.  So TLS servers are generally not affected and the severity of the issue is Moderate.  The FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
+    "cvss": [],
+    "fix": {
+      "versions": [
+        "3.0.14-1~deb12u2"
+      ],
+      "state": "fixed"
+    },
+    "advisories": [
+      {
+        "id": "DSA-5764-1",
+        "link": "https://security-tracker.debian.org/tracker/DSA-5764-1"
+      }
+    ]
+  },
+  "relatedVulnerabilities": [
+    {
+      "id": "CVE-2024-6119",
+      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-6119",
+      "namespace": "nvd:cpe",
+      "severity": "High",
+      "urls": [
+        "https://github.com/openssl/openssl/commit/05f360d9e849a1b277db628f1f13083a7f8dd04f",
+        "https://github.com/openssl/openssl/commit/06d1dc3fa96a2ba5a3e22735a033012aadc9f0d6",
+        "https://github.com/openssl/openssl/commit/621f3729831b05ee828a3203eddb621d014ff2b2",
+        "https://github.com/openssl/openssl/commit/7dfcee2cd2a63b2c64b9b4b0850be64cb695b0a0",
+        "https://openssl-library.org/news/secadv/20240903.txt"
+      ],
+      "description": "Issue summary: Applications performing certificate name checks (e.g., TLS\nclients checking server certificates) may attempt to read an invalid memory\naddress resulting in abnormal termination of the application process.\n\nImpact summary: Abnormal termination of an application can a cause a denial of\nservice.\n\nApplications performing certificate name checks (e.g., TLS clients checking\nserver certificates) may attempt to read an invalid memory address when\ncomparing the expected name with an `otherName` subject alternative name of an\nX.509 certificate. This may result in an exception that terminates the\napplication program.\n\nNote that basic certificate chain validation (signatures, dates, ...) is not\naffected, the denial of service can occur only when the application also\nspecifies an expected DNS name, Email address or IP address.\n\nTLS servers rarely solicit client certificates, and even when they do, they\ngenerally don't perform a name check against a reference identifier (expected\nidentity), but rather extract the presented identity after checking the\ncertificate chain.  So TLS servers are generally not affected and the severity\nof the issue is Moderate.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
+      "cvss": [
+        {
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "metrics": {
+            "baseScore": 7.5,
+            "exploitabilityScore": 3.9,
+            "impactScore": 3.6
+          },
+          "vendorMetadata": {}
+        }
+      ]
+    }
+  ],
+  "matchDetails": [
+    {
+      "type": "exact-direct-match",
+      "matcher": "dpkg-matcher",
+      "searchedBy": {
+        "distro": {
+          "type": "debian",
+          "version": "12"
+        },
+        "namespace": "debian:distro:debian:12",
+        "package": {
+          "name": "openssl",
+          "version": "3.0.11-1~deb12u2"
+        }
+      },
+      "found": {
+        "versionConstraint": "< 3.0.14-1~deb12u2 (deb)",
+        "vulnerabilityID": "CVE-2024-6119"
+      }
+    }
+  ],
+  "artifact": {
+    "id": "f85905cf08832309",
+    "name": "openssl",
+    "version": "3.0.11-1~deb12u2",
+    "type": "deb",
+    "locations": [
+      {
+        "path": "/usr/share/doc/openssl/copyright",
+        "layerID": "sha256:071988c3d0aee6316ed29e8848ddaaa8efed1fb239ba9eedf8df557122fd7d5e"
+      },
+      {
+        "path": "/var/lib/dpkg/info/openssl.conffiles",
+        "layerID": "sha256:071988c3d0aee6316ed29e8848ddaaa8efed1fb239ba9eedf8df557122fd7d5e"
+      },
+      {
+        "path": "/var/lib/dpkg/info/openssl.list",
+        "layerID": "sha256:071988c3d0aee6316ed29e8848ddaaa8efed1fb239ba9eedf8df557122fd7d5e"
+      },
+      {
+        "path": "/var/lib/dpkg/info/openssl.md5sums",
+        "layerID": "sha256:071988c3d0aee6316ed29e8848ddaaa8efed1fb239ba9eedf8df557122fd7d5e"
+      },
+      {
+        "path": "/var/lib/dpkg/info/openssl.postinst",
+        "layerID": "sha256:071988c3d0aee6316ed29e8848ddaaa8efed1fb239ba9eedf8df557122fd7d5e"
+      },
+      {
+        "path": "/var/lib/dpkg/status",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      }
+    ],
+    "language": "",
+    "licenses": [
+      "Apache-2.0",
+      "Artistic",
+      "GPL-1",
+      "GPL-1+"
+    ],
+    "cpes": [
+      "cpe:2.3:a:openssl:openssl:3.0.11-1~deb12u2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/openssl@3.0.11-1~deb12u2?arch=amd64&distro=debian-12",
+    "upstreams": []
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2023-31484",
+    "dataSource": "https://security-tracker.debian.org/tracker/CVE-2023-31484",
+    "namespace": "debian:distro:debian:12",
+    "severity": "High",
+    "urls": [
+      "https://security-tracker.debian.org/tracker/CVE-2023-31484"
+    ],
+    "description": "CPAN.pm before 2.35 does not verify TLS certificates when downloading distributions over HTTPS.",
+    "cvss": [],
+    "fix": {
+      "versions": [],
+      "state": "wont-fix"
+    },
+    "advisories": []
+  },
+  "relatedVulnerabilities": [
+    {
+      "id": "CVE-2023-31484",
+      "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-31484",
+      "namespace": "nvd:cpe",
+      "severity": "High",
+      "urls": [
+        "http://www.openwall.com/lists/oss-security/2023/04/29/1",
+        "http://www.openwall.com/lists/oss-security/2023/05/03/3",
+        "http://www.openwall.com/lists/oss-security/2023/05/03/5",
+        "http://www.openwall.com/lists/oss-security/2023/05/07/2",
+        "https://blog.hackeriet.no/perl-http-tiny-insecure-tls-default-affects-cpan-modules/",
+        "https://github.com/andk/cpanpm/pull/175",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/BM6UW55CNFUTNGD5ZRKGUKKKFDJGMFHL/",
+        "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/LEGCEOKFJVBJ2QQ6S2H4NAEWTUERC7SB/",
+        "https://metacpan.org/dist/CPAN/changes",
+        "https://security.netapp.com/advisory/ntap-20240621-0007/",
+        "https://www.openwall.com/lists/oss-security/2023/04/18/14"
+      ],
+      "description": "CPAN.pm before 2.35 does not verify TLS certificates when downloading distributions over HTTPS.",
+      "cvss": [
+        {
+          "source": "nvd@nist.gov",
+          "type": "Primary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metrics": {
+            "baseScore": 8.1,
+            "exploitabilityScore": 2.2,
+            "impactScore": 5.9
+          },
+          "vendorMetadata": {}
+        },
+        {
+          "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+          "type": "Secondary",
+          "version": "3.1",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "metrics": {
+            "baseScore": 8.1,
+            "exploitabilityScore": 2.2,
+            "impactScore": 5.9
+          },
+          "vendorMetadata": {}
+        }
+      ]
+    }
+  ],
+  "matchDetails": [
+    {
+      "type": "exact-indirect-match",
+      "matcher": "dpkg-matcher",
+      "searchedBy": {
+        "distro": {
+          "type": "debian",
+          "version": "12"
+        },
+        "namespace": "debian:distro:debian:12",
+        "package": {
+          "name": "perl",
+          "version": "5.36.0-7+deb12u1"
+        }
+      },
+      "found": {
+        "versionConstraint": "none (deb)",
+        "vulnerabilityID": "CVE-2023-31484"
+      }
+    }
+  ],
+  "artifact": {
+    "id": "33e903c5db21825a",
+    "name": "perl-base",
+    "version": "5.36.0-7+deb12u1",
+    "type": "deb",
+    "locations": [
+      {
+        "path": "/usr/share/doc/perl-base/copyright",
+        "layerID": "sha256:5d4427064ecc46e3c2add169e9b5eafc7ed2be7861081ec925938ab628ac0e25"
+      },
+      {
+        "path": "/var/lib/dpkg/info/perl-base.list",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/var/lib/dpkg/info/perl-base.md5sums",
+        "layerID": "sha256:5d4427064ecc46e3c2add169e9b5eafc7ed2be7861081ec925938ab628ac0e25"
+      },
+      {
+        "path": "/var/lib/dpkg/info/perl-base.postinst",
+        "layerID": "sha256:5d4427064ecc46e3c2add169e9b5eafc7ed2be7861081ec925938ab628ac0e25"
+      },
+      {
+        "path": "/var/lib/dpkg/info/perl-base.postrm",
+        "layerID": "sha256:5d4427064ecc46e3c2add169e9b5eafc7ed2be7861081ec925938ab628ac0e25"
+      },
+      {
+        "path": "/var/lib/dpkg/info/perl-base.preinst",
+        "layerID": "sha256:5d4427064ecc46e3c2add169e9b5eafc7ed2be7861081ec925938ab628ac0e25"
+      },
+      {
+        "path": "/var/lib/dpkg/info/perl-base.prerm",
+        "layerID": "sha256:5d4427064ecc46e3c2add169e9b5eafc7ed2be7861081ec925938ab628ac0e25"
+      },
+      {
+        "path": "/var/lib/dpkg/status",
+        "layerID": "sha256:f1efa4b75b18217300ba51ee6aca37c6352a2bb3b6b10b91ad030bcd77ab04b1"
+      }
+    ],
+    "language": "",
+    "licenses": [
+      "Artistic",
+      "Artistic-2",
+      "Artistic-dist",
+      "BSD-3-clause",
+      "BSD-3-clause-GENERIC",
+      "BSD-3-clause-with-weird-numbering",
+      "BSD-4-clause-POWERDOG",
+      "BZIP",
+      "DONT-CHANGE-THE-GPL",
+      "Expat",
+      "GPL-1",
+      "GPL-1+",
+      "GPL-2",
+      "GPL-2+",
+      "GPL-3+-WITH-BISON-EXCEPTION",
+      "HSIEH-BSD",
+      "HSIEH-DERIVATIVE",
+      "LGPL-2.1",
+      "REGCOMP",
+      "REGCOMP,",
+      "RRA-KEEP-THIS-NOTICE",
+      "SDBM-PUBLIC-DOMAIN",
+      "TEXT-TABS",
+      "Unicode",
+      "ZLIB"
+    ],
+    "cpes": [
+      "cpe:2.3:a:perl-base:perl-base:5.36.0-7+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:perl-base:perl_base:5.36.0-7+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:perl_base:perl-base:5.36.0-7+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:perl_base:perl_base:5.36.0-7+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:perl:perl-base:5.36.0-7+deb12u1:*:*:*:*:*:*:*",
+      "cpe:2.3:a:perl:perl_base:5.36.0-7+deb12u1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u1?arch=amd64&distro=debian-12&upstream=perl",
+    "upstreams": [
+      {
+        "name": "perl"
+      }
+    ]
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2024-7592",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-7592",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+      "https://github.com/python/cpython/commit/391e5626e3ee5af267b97e37abc7475732e67621",
+      "https://github.com/python/cpython/commit/a77ab24427a18bff817025adb03ca920dc3f1a06",
+      "https://github.com/python/cpython/commit/b2f11ca7667e4d57c71c1c88b255115f16042d9a",
+      "https://github.com/python/cpython/commit/d4ac921a4b081f7f996a5d2b101684b67ba0ed7f",
+      "https://github.com/python/cpython/commit/d662e2db2605515a767f88ad48096b8ac623c774",
+      "https://github.com/python/cpython/commit/dcc3eaef98cd94d6cb6cb0f44bd1c903d04f33b1",
+      "https://github.com/python/cpython/issues/123067",
+      "https://github.com/python/cpython/pull/123075",
+      "https://mail.python.org/archives/list/security-announce@python.org/thread/HXJAAAALNUNGCQUS2W7WR6GFIZIHFOOK/"
+    ],
+    "description": "There is a LOW severity vulnerability affecting CPython, specifically the\n'http.cookies' standard library module.\n\n\nWhen parsing cookies that contained backslashes for quoted characters in\nthe cookie value, the parser would use an algorithm with quadratic\ncomplexity, resulting in excess CPU resources being used while parsing the\nvalue.",
+    "cvss": [
+      {
+        "source": "nvd@nist.gov",
+        "type": "Primary",
+        "version": "3.1",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "metrics": {
+          "baseScore": 7.5,
+          "exploitabilityScore": 3.9,
+          "impactScore": 3.6
+        },
+        "vendorMetadata": {}
+      },
+      {
+        "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+        "type": "Secondary",
+        "version": "3.1",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "metrics": {
+          "baseScore": 7.5,
+          "exploitabilityScore": 3.9,
+          "impactScore": 3.6
+        },
+        "vendorMetadata": {}
+      }
+    ],
+    "fix": {
+      "versions": [
+        "3.10.15",
+        "3.11.10",
+        "3.12.6",
+        "3.13.0rc2",
+        "3.8.20",
+        "3.9.20"
+      ],
+      "state": "fixed"
+    },
+    "advisories": []
+  },
+  "relatedVulnerabilities": [],
+  "matchDetails": [
+    {
+      "type": "cpe-match",
+      "matcher": "stock-matcher",
+      "searchedBy": {
+        "namespace": "nvd:cpe",
+        "cpes": [
+          "cpe:2.3:a:python:python:3.12.4:*:*:*:*:*:*:*"
+        ],
+        "package": {
+          "name": "python",
+          "version": "3.12.4"
+        }
+      },
+      "found": {
+        "vulnerabilityID": "CVE-2024-7592",
+        "versionConstraint": ">= 3.13.0a1, < 3.13.0rc2 || >= 3.12, < 3.12.6 || >= 3.11, < 3.11.10 || >= 3.10, < 3.10.15 || >= 3.9, < 3.9.20 || < 3.8.20 (unknown)",
+        "cpes": [
+          "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+        ]
+      }
+    }
+  ],
+  "artifact": {
+    "id": "4e367233cf65e808",
+    "name": "python",
+    "version": "3.12.4",
+    "type": "binary",
+    "locations": [
+      {
+        "path": "/usr/local/bin/python3.12",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/usr/local/lib/libpython3.12.so.1.0",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+      "cpe:2.3:a:python_software_foundation:python:3.12.4:*:*:*:*:*:*:*",
+      "cpe:2.3:a:python:python:3.12.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/python@3.12.4",
+    "upstreams": []
+  }
+}
+{
+  "vulnerability": {
+    "id": "CVE-2024-6232",
+    "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-6232",
+    "namespace": "nvd:cpe",
+    "severity": "High",
+    "urls": [
+      "https://github.com/python/cpython/commit/4eaf4891c12589e3c7bdad5f5b076e4c8392dd06",
+      "https://github.com/python/cpython/commit/743acbe872485dc18df4d8ab2dc7895187f062c4",
+      "https://github.com/python/cpython/commit/7d1f50cd92ff7e10a1c15a8f591dde8a6843a64d",
+      "https://github.com/python/cpython/commit/b4225ca91547aa97ed3aca391614afbb255bc877",
+      "https://github.com/python/cpython/commit/d449caf8a179e3b954268b3a88eb9170be3c8fbf",
+      "https://github.com/python/cpython/commit/ed3a49ea734ada357ff4442996fd4ae71d253373",
+      "https://github.com/python/cpython/issues/121285",
+      "https://github.com/python/cpython/pull/121286",
+      "https://mail.python.org/archives/list/security-announce@python.org/thread/JRYFTPRHZRTLMZLWQEUHZSJXNHM4ACTY/"
+    ],
+    "description": "There is a MEDIUM severity vulnerability affecting CPython.\n\n\n\n\n\nRegular expressions that allowed excessive backtracking during tarfile.TarFile header parsing are vulnerable to ReDoS via specifically-crafted tar archives.",
+    "cvss": [
+      {
+        "source": "nvd@nist.gov",
+        "type": "Primary",
+        "version": "3.1",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "metrics": {
+          "baseScore": 7.5,
+          "exploitabilityScore": 3.9,
+          "impactScore": 3.6
+        },
+        "vendorMetadata": {}
+      }
+    ],
+    "fix": {
+      "versions": [
+        "3.10.15",
+        "3.11.10",
+        "3.12.6",
+        "3.13.0rc2",
+        "3.8.20",
+        "3.9.20"
+      ],
+      "state": "fixed"
+    },
+    "advisories": []
+  },
+  "relatedVulnerabilities": [],
+  "matchDetails": [
+    {
+      "type": "cpe-match",
+      "matcher": "stock-matcher",
+      "searchedBy": {
+        "namespace": "nvd:cpe",
+        "cpes": [
+          "cpe:2.3:a:python:python:3.12.4:*:*:*:*:*:*:*"
+        ],
+        "package": {
+          "name": "python",
+          "version": "3.12.4"
+        }
+      },
+      "found": {
+        "vulnerabilityID": "CVE-2024-6232",
+        "versionConstraint": ">= 3.13, < 3.13.0rc2 || >= 3.12, < 3.12.6 || >= 3.11, < 3.11.10 || >= 3.10, < 3.10.15 || >= 3.9, < 3.9.20 || < 3.8.20 (unknown)",
+        "cpes": [
+          "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+        ]
+      }
+    }
+  ],
+  "artifact": {
+    "id": "4e367233cf65e808",
+    "name": "python",
+    "version": "3.12.4",
+    "type": "binary",
+    "locations": [
+      {
+        "path": "/usr/local/bin/python3.12",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      },
+      {
+        "path": "/usr/local/lib/libpython3.12.so.1.0",
+        "layerID": "sha256:414ffc85acfb6883a8fd6ba555940f7b59df833ba9b88013baafe0181f68cb2e"
+      }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+      "cpe:2.3:a:python_software_foundation:python:3.12.4:*:*:*:*:*:*:*",
+      "cpe:2.3:a:python:python:3.12.4:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:generic/python@3.12.4",
+    "upstreams": []
+  }
+}
